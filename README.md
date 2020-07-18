@@ -14,7 +14,16 @@
 
 - You should use a hyphen for your file names. The Google search engine treats a hyphen as a word separator but does not regard an underscore that way. For these reasons, it is best to get into the habit of writing your folder and file names lowercase with no spaces and with words separated by dashes, at least until you know what you're doing. That way you'll bump into fewer problems later down the road.
 
-- **Note**: The Windows file system tends to use backslashes, not forward slashes, e.g. `C:\windows`. This doesn't matter in HTML — even if you are developing your website on Windows, you should still use forward slashes in your code.
+- Like HTML, CSS is not a programming language. It's not a markup language either. CSS is a style sheet language. CSS is what you use to selectively style HTML elements. For example, this CSS selects paragraph text, setting the color to red:
+  ```css
+  p {
+    color: red;
+  }
+  ```
+
+- JavaScript is the programming language that you use to add interactive features to your website. Some examples could be games, things that happen when buttons are pressed or data is entered in forms, dynamic styling effects, animation, and much more.
+
+> **Note**: The Windows file system tends to use backslashes, not forward slashes, e.g. `C:\windows`. This doesn't matter in HTML — even if you are developing your website on Windows, you should still use forward slashes in your code.
 
 ### Learning Outcomes
 
@@ -178,3 +187,7 @@ This HTML, when rendered in a web browser, looks like this: [Ruby Monstas Homepa
 - [brief intro to front-end development](https://web.archive.org/web/20200601022721/https://generalassemb.ly/blog/what-is-front-end-web-development/)
 - [ruby monstas](http://rubymonstas.org/)
 - [Mozilla Web Developers](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
+- [HTML Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+- [CSS Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index)
+- [JS Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+- [devdocs.io/](https://devdocs.io/)
