@@ -1,0 +1,13 @@
+body {
+    /* margin-padding-border */
+    margin: 100px auto;
+    padding: 100px;
+    border: 10px solid #d5a254;
+
+    /* width-height */
+    width: 800px;
+
+    /* font-text */
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    /* color-background */
+}
