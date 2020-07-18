@@ -111,7 +111,7 @@ There is some steps that you gotta follow in order to adjust fonts in an html do
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 ```
 This code links your page to a style sheet that loads the Open Sans font family with your webpage.    
-    <li>Add the following lines (shown below). The property <code>font-family</code> refers to the font(s) you want to use for text. This rule defines a global base font and font size for the whole page. Since <code>&lt;html&gt;</code> is the parent element of the whole page, all elements inside it inherit the same <code>font-size</code> and <code>font-family</code>.</li>
+    <li>Add the following lines (shown below). The property <code>font-family</code> refers to the font(s) you want to use for text. This rule defines a global base font and font size for the whole page. Since <code>&lt;html&gt;</code> is the parent element of the whole page, all elements inside it inherit the same <code>font-size</code> and <code>font-family</code> by default.</li>
 
 ```css
 html {
