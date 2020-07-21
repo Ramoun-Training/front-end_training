@@ -164,6 +164,14 @@ Note that variables may hold values that have different [data types](https://dev
 
 So why do we need variables? Variables are necessary to do anything interesting in programming. If values couldn't change, then you couldn't do anything dynamic, like personalize a greeting message or change an image displayed in an image gallery.
 
+<strong>Some Imprtant Notes about <mark>Variables</makr>:</strong>
+
+1. Variable stores a single data value that can be changed later.
+2. Variables can be defined using var keyword. Variables defined without var keyword become global variables.
+3. Variables must be initialized before using.
+4. Multiple variables can be defined in a single line. e.g. var one = 1, two = 2, three = "three";
+5. Variables in JavaScript are loosely-typed variables. It can store value of any data type through out it's life time.
+
 </details>
 
 <details>
@@ -309,6 +317,7 @@ multiply(0.5, 3);
 
 > <p><strong>Note</strong>: The <a href="/en-US/docs/Web/JavaScript/Reference/Statements/return"><code>return</code></a> statement tells the browser to return the <code>result</code> variable out of the function so it is available to use. This is necessary because variables defined inside functions are only available inside those functions. This is called variable <a href="/en-US/docs/Glossary/Scope">scoping</a>. (Read more about <a href="/en-US/docs/Web/JavaScript/Guide/Values,_variables,_and_literals#Variable_scope">variable scoping</a>.)</p>
 
+> **Note**: Function type is determined by the <code>return</code> value.
 </details>
 
 <details>
@@ -383,7 +392,7 @@ In this section, you will learn how to use JavaScript and DOM API features to al
 > **Note**: 
 > <code>getAttribute()</code> returns exactly what was in the HTML. It may be a relative URL.
 >
-> <code>.src</code> returns a fully qualified absolute URL, even if what was in the HTML was a relative URL.
+> <code>.src</code> returns a fully qualified absolute URL, even if what was in the HTML was a relative URL (that's why if used in conditional statement[i.e: (<code>img.src === "string"</code>)] it won't work properly if the link in <code>"string"</code> was a relative link).
 
 > **For More Info**: visit [this_link](https://stackoverflow.com/questions/3919291/when-to-use-setattribute-vs-attribute-in-javascript)
 
@@ -485,6 +494,40 @@ function setUserName() {
 
 - [Learn JavaScript](https://learnjavascript.online/):
   This is an excellent resource for aspiring web developers! Learn JavaScript in an interactive environment, with short lessons and interactive tests, guided by an automated assessment. The first 40 lessons are free. The complete course is available for a small one-time payment.
+
+- [Dash Assembly](https://dash.generalassemb.ly/)
+
+- [One Month](https://onemonth.com/courses/learn-html-free)
+
+- [freecodecamp](https://www.freecodecamp.org/)
+
+- [codecademy](https://www.codecademy.com/)
+
+- [khan Academy](https://khanacademy.com)
+
+- [Future Learn](https://www.futurelearn.com/)
+
+- [Code Hs](https://codehs.com/)
+
+- [Linux Foundation](https://linux.com)
+
+- [jad got something!](https://jadjoubran.io/)
+
+- [lewagon bootcamp](https://www.lewagon.com/)
+
+- [become a google developer expert](https://developers.google.com/community/experts)
+
+- [dashborad for your web projects](https://webdash.xyz/)
+
+- [snippets for javascript and react use cases](https://codetogo.io/)
+
+- [Stanford University](https://www.stanford.edu/)
+
+### For UI/UX and Designers
+
+- [Nicole](https://nicolesaidy.com/)
+- [one page love](https://onepagelove.com/nicole-saidy)
+
 
 <!--
 <details>
