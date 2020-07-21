@@ -192,3 +192,16 @@ This HTML, when rendered in a web browser, looks like this: [Ruby Monstas Homepa
 - [JS Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 - [w3shcool](https://https://www.w3schools.com/)
 - [devdocs.io/](https://devdocs.io/)
+
+### Additional Resources
+
+- [introductory level web vids](https://www.youtube.com/watch?v=BANChTkxYYY&list=PLwqG3V3cExWpCgHOcLEKg6z-InpjHr7MB)
+- [Skills of a Successful Front-End Web Developer ](https://web.archive.org/web/20151110193658/https://www.drupal.org/node/1245650)
+
+### To Get A Job
+
+- [Microverse](https://microverse.com)
+- [Thinkful](https://thinful.com)
+- [Appcademy](https://app.academy)
+- [HackerRank](https://www.hackerrank.com/)
+- much more...etc.
