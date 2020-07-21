@@ -34,6 +34,10 @@ h1 {
     
 }
 
+h1:hover {
+    cursor: pointer;
+}
+
 img {
     display: block;
     margin: 40px auto 0 auto;
@@ -65,7 +69,7 @@ button {
     display: block;
 
     margin: 40px auto 0px auto;
-    border: 0px;
+    border: 0px;        
 
     width: 150px;
     height: 60px;
@@ -73,15 +77,23 @@ button {
     font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-size: 20px;    
 
-    background-color: #cd9747;
+    background-color: #d18a1e;
     color: white;
 }
 
 button:hover {
+    outline: 5px outset white;
+    outline-offset: 5px;
+
     cursor: pointer;
-    background-color: #cfaa65;
+    background-color: #d1a44f;
+
+    transition: ease-in-out 0.2s;
 }
 
 button:active {
-    background-color: #af8338;
+    /* background-color: #e4760f; */
+    background-color: #494746;
 }
+
+
