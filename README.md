@@ -190,4 +190,5 @@ This HTML, when rendered in a web browser, looks like this: [Ruby Monstas Homepa
 - [HTML Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 - [CSS Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index)
 - [JS Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+- [w3shcool](https://https://www.w3schools.com/)
 - [devdocs.io/](https://devdocs.io/)
