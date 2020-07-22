@@ -254,3 +254,18 @@ body {
 }
 ```
 </details>
+
+### Test Yourself
+
+<ul>
+  <li>What are selectors?</li>
+  <li>What are properties?</li>
+  <li>What are values?</li>
+  <li>What is the “query string” in a URL and what does it do?</li>
+  <li>What is the difference between “pixels” and “ems”?</li>
+  <li>How do CSS styles for a particular element get inherited?  i.e. how does an element get its “default” styles?</li>
+  <li>What are two CSS attributes you can change to push an element around on the page?</li>
+  <li>What are the three different ways to include CSS in your project or use CSS to style a particular element?</li>
+  <li>What is the “default stylesheet” or “user agent stylesheet”?</li>
+  <li>Why use a CSS reset file?</li>
+</ul>
