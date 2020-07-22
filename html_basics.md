@@ -105,3 +105,96 @@ Links are very important — they are what makes the web a web! To add a link, w
 
 
 </details>
+
+
+
+
+
+
+
+### Html in 3 words
+
+- Markup --> marks up content (helps in seo and other stuff like styling, controling the order of elements ...etc)
+- Structure --> builds the structure of a web page
+- Text --> text embeded in an html page
+
+### Test Yourself
+
+<!-- info in here represent my current knowledge about the topic before learning anything new -->
+
+<details>
+  <summary>Why do we separate HTML and CSS?</summary>
+    <ul><ul>
+        <li>apply one style (from one style sheet) to multiple html docs.</li>
+        <li></li>
+    </ul></ul>
+</details>  
+
+<details>
+  <summary>What are classes and IDs (and how are they different)?</summary>
+    <ul><ul>
+        <li><strong>Classes</strong>: are attributes of elements that allows grouping of bunch of elements so that it becomes easier to style or manipulate them [i.e: multiple elements can have the same class].</li>
+        <li><strong>IDs</strong>: are attributes of elements that allows distinguishing a specific element [i.e: multiple elements shouldn't have the same id, because ids should be unique].</li>
+    </ul></ul>
+</details>  
+
+<details>
+  <summary>What are elements?</summary>
+    <ul><ul>
+        <li>Elements are the building block of any html document.</li>        
+        <li>Elements represent the tags (opening tag and closing tag) used to markup different contents of the page.</li>
+    </ul></ul>
+</details> 
+
+<details>
+  <summary>What are tags?</summary>
+    <ul><ul>
+        <li>tags is a way of marking up content of an html document.</li>        
+        <li>using an opening tag and a closing tag to tell the browser that some text of the document is a heading or a paragraph.</li>
+        <li>Example:
+
+```html
+<openingTag>content</closingtag>
+```
+</li>    
+    </ul></ul>
+</details>
+
+<details>
+  <summary>What are attributes?</summary>
+    <ul><ul>        
+        <li>Attributes are like properties of an html element</li>
+        <li>Attributes can be used to alter the content of an html element by applying styles and other properties to the content.</li>
+        <li>Example:
+
+```html
+<openingTag attribute="value">content</closingtag>
+```
+</li>    
+    </ul></ul>
+</details> 
+
+<details>
+  <summary>What are forms?</summary>
+    <ul><ul>        
+        <li>Forms are html elements that can contain some textboxes, submit buttons, checkboxes and other stuff.</li>
+        <li>Forms are used for sign up and log in pages.</li>
+    </ul></ul>
+</details>
+
+<details>
+  <summary>What is a div?</summary>
+    <ul><ul>        
+        <li>Div: is a block level element that can contain a bunch of other html elements.</li>
+        <li>Divs are mainly used to group multiple html elements together</li>
+    </ul></ul>
+</details>  
+
+
+<!-- <details>
+  <summary>Why do we separate HTML and CSS?</summary>
+    <ul><ul>
+        <li>apply one style (from one style sheet) to multiple html docs.</li>
+        <li></li>
+    </ul></ul>
+</details>   -->
