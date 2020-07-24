@@ -30,7 +30,7 @@
 <details>
 <summary>What is the role of HTML in a web page?</summary>
 <ul><ul>
-  <li></li>
+  <li>HTML, or HyperText Markup Language, is a markup language used to describe the structure of a web page. It uses a special syntax or notation to organize and give information about the page to the browser</li>
 </ul></ul>
 </details>
 
