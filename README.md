@@ -25,7 +25,17 @@
 
 > **Note**: The Windows file system tends to use backslashes, not forward slashes, e.g. `C:\windows`. This doesn't matter in HTML — even if you are developing your website on Windows, you should still use forward slashes in your code.
 
+> **Note**:  It is important to remember that various devices have different screen sizes and some have faster connections to the web than others.<span>[2]</span>
+
 ### Learning Outcomes
+
+<details>
+<summary>What is the a web server?</summary>
+<ul><ul>
+  <li>A Web servers is a special computer that is constantly connected to the Internet, and is optimized to send web pages out to people who request them.<span>[2]</span></li>
+  <li>Some big companies run their own web servers, but it is more common to use the services of a <strong>web hosting</strong> company who charge a fee to host your site.<span>[2]</span></li></li>
+</ul></ul>
+</details>
 
 <details>
 <summary>What is the role of HTML in a web page?</summary>
@@ -37,7 +47,7 @@
 <details>
 <summary>What is the role of CSS in a web page?</summary>
 <ul><ul>
-  <li></li>
+  <li> CSS uses rules to enable you to control the <mark>styling</mark> and <mark>layout</mark> of web pages.<span>[2]</span></li>
 </ul></ul>
 </details>
 
@@ -172,6 +182,16 @@ This HTML, when rendered in a web browser, looks like this: [Ruby Monstas Homepa
 </ul></ul>
 </details>
 
+<details>
+<summary><b><u>in order to view a web page, users might</u></b>:</summary>
+
+- type a web address into their browser.<span>[2]</span>
+- follow a link from another site.<span>[2]</span>
+- use a bookmark.<span>[2]</span>
+</details>
+
+> **Note**: Software manufacturers regularly release new versions of browsers with new features and supporting new additions to languages. It is important, however, to **remember** that many computer owners will not be running the latest versions of these browsers. Therefore *you cannot rely on all visitors to your site being able to use the latest functionality offered in all browsers*.
+
 ### Glossery
 
 - Meta information: information about the document, not part of the document itself.
@@ -204,4 +224,5 @@ This HTML, when rendered in a web browser, looks like this: [Ruby Monstas Homepa
 - [Thinkful](https://thinful.com)
 - [Appcademy](https://app.academy)
 - [HackerRank](https://www.hackerrank.com/)
+- [StackOverflow](https://www.stackoverflow.com)
 - much more...etc.
