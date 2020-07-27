@@ -255,6 +255,14 @@ body {
 ```
 </details>
 
+<details>
+<summary><b><u>CSS properties generally fall into one of two categories:</u></b></summary>
+
+- <strong>Presentation</strong>: How to control things like the color of text, the fonts you want to use and the size of those fonts, how to add background colors to pages (or parts of a page), and how to add background images.<span>[2]</span>
+
+- <strong>Layout</strong>: How to control <u>where</u> the different elements are positioned on the screen. There are several techniques that professionals use to make their pages more attractive.<span>[2]</span>
+</details>
+
 ### Test Yourself
 
 <ul>
