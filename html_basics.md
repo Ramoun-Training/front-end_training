@@ -2,7 +2,7 @@
 
 <h3><strong>Elements</strong></h3>
 
-In Html, Elements can contain either text or other elements (nested).
+In Html, Elements can contain either text or other elements (nested).Html closes unclosed tags by default when new tags are opened in the flow of the page (so be careful)
 
 E.G:
 
@@ -149,17 +149,133 @@ Links are very important — they are what makes the web a web! To add a link, w
 ```
 When users click the Contacts link, they'll be taken to the section of the webpage with the Contacts header element.
 > **Note**: IDs should be unique, But if there are 2 or more elements with the same ID, and that ID is used to create an internal link, the first element in the flow of the page will be choosen to jump to (the destination).<span>[0]</span>
-</p>         
-        </ul>
+
+> **Note**: Make Dead Links Using the Hash Symbol (<code>#</code>) in place of the link.
+
+> **Note**: You can "make elements into links" by nesting them within an <code>a</code> element.
+</p>    
+</ul>    
+    <h4><strong><u> - <code>Input</code> tag</u></strong>:</h4>
+        <ul>
+            <p><code>input</code> elements are a convenient way to get input from your user.
+
+```html
+<input type="text">
+```
+> **Note**: <code>input</code> elements are self-closing.
+
+> **Note**: <code>Placeholder</code> text is what is displayed in your input element before your user has inputted anything.
+
+```html
+<input placeholder="some text">
+```
+</ul>
+        <h4><strong><u> - <code>Form</code> tag</u></strong>:</h4>
+        <ul>
+            <li><p>You can build web forms that actually submit data to a server using nothing more than pure HTML. You can do this by specifying an action on your <code>form</code> element.</p>     
+
+```html
+<form action="/url-where-you-want-to-submit-form-data"></form>
+```
+</li>
+            <li>All inputs inside of a form are submitted to wherever the form goes to. By Default the form submits to the page that you are currently on.<span>[3]</span></li>
+            <li>By default: when the <code>enter</code> key is pressed while one of the elements of the form is in "focus"<code> -> </code>the form is submitted immediatley.<span>[0]</span></li>
+            <li><code>div</code>s are used to seprate different elements of forms so that they don't be all on one line (because they are inline elements).<span>[3]</span><span>[0]</span></li>
+            <li>Almost always when you build a form, you are gonna want your form to submit somewhere other than the page you are currently on & in order to do that, you'll need to add the atribute <code>action</code> <code> -> </code>the <code>action</code> is going to be where your form is submitting to.<span>[3]</span></li>
+            <li>The next thing that you are almost always gonna specify on your form is the <code>method</code> you want your form to use<code> -> </code>that is gonna be: <code>GET</code> or a <code>Post</code> :
+                <ul>
+                    <li><storng><code>GET</code></strong>: is going to append things to the url and it is gonna send it to another page on the site</li>
+                    <li><storng><code>POST</code></strong>: is useful when you have a server and want to save some infromation</li>
+
+> **Note**: browsers can only render <code>GET</code> requests.
+</ul>
+            <span>[3]</span></li>
+            <li>in order for an input to show out in a form URL, you must specify the <code>name</code> attribute.<span>[3]</span></li>
+            <li>if you click on a label it should highlight the field that it's being labeled for, this is helpful for not only users but also for screen readers and in order to do this, you should set a <code>for</code> attribute to the element you want to highlight whenever you click on the label with a <code>"value"</code> of the <code>id</code> of the element you want to highlight.<span>[3]</span></li>                        
+
+> **Note**: Another way to associate labels with elements is by nesting the element inside of the label element.<span>[3]</span>    
+
+> **Note**: Most people use the <code>for</code> attribute method instead of the wrap inside method because it is cleaner and easier to style.<span>[3]</span> It is considered best practice to set a <code>for</code> attribute on the <code>label</code> element, with a value that matches the value of the <code>id</code> attribute of the <code>input</code> element. This allows assistive technologies to create a linked relationship between the label and the child <code>input</code> element.<span>[1]</span>
+
+> **Note**: Most people use the wrap inside method with checkboxes and radio buttons.<span>[3]</span>
+
+> **Note**: The defualt <code>type</code> of the <code>input</code> element is <code>text</code>, but you are always wanna be explicit in what type of input you are using.<span>[3]</span>
+
+> **Note**: the <code>type</code> of email verifies emails for you by default. It also provides a keyboard specified for entering emails on mobile phones.<span>[0]</span>
+
+> **Note**: the default behaviour of a <code>button</code> element is <code>type</code> submit. That type submits form to the server. if the attribute is not specified, or if the attribute is dynamically changed to an empty or invalid value.
+
+> **Note**: for <code>button</code> element the <code>type="button"</code>, The button has no default behavior. It can have client-side scripts associated with the element's events, which are triggered when the events occur.
+
+<li>to add a default value for a text input field you can use the <code>value</code> attribute.<span>[3]</span></li>
+<li>Adding a <code>submit</code> button to the form will send the data from the form to the URL you specified with your form's <code>action</code> attribute.<span>[1]</span></li>
+            <li>Here's an example submit button:
+
+```html
+<button type="submit">this button submits the form</button>
+```
+<span>[1]</span></li>
+            <li>all <code>radio</code> buttons need to share the same <code>name</code> which is how we know that there can only be one selected.<span>[3]</span></li>
+
+> **Note**: for all <code>radio</code> buttons, you need to specify a value, so when you submit it to your form, you know what you are getting back.<span>[3]</span>
+
+> **Note**: All related <code>radio</code> buttons should have the same name attribute to create a radio button group. By creating a radio group, selecting any single radio button will automatically deselect the other buttons within the same group ensuring only one answer is provided by the user.<span>[1]</span>
+
+<li>Each of your <code>checkboxes</code> can be nested within its own <code>label</code> element. By wrapping an <code>input</code> element inside of a label element it will automatically associate the checkbox input with the label element surrounding it.<span>[1]</span></li>
+
+> **Note**: All related checkbox inputs should have the same <code>name</code> attribute.<span>[1]</span>
+
+Here's an example of a checkbox:
+
+```html
+<label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
+```
+<label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
+
+> **Note**: It is considered best practice to explicitly define the relationship between a checkbox input and its corresponding label by setting the <code>for</code> attribute on the label element to match the <code>id</code> attribute of the associated input element.<span>[1]</span>
+
+> **Note**:  A <code>label</code>> element can have both a for attribute and a contained control element, as long as the <code>for</code> attribute points to the contained control element.<span>[4]</span>
+
+> **Note**: When a form gets submitted, the data is sent to the server and includes entries for the options selected. Inputs of type <code>radio</code> and <code>checkbox</code> report their values from the <code>value</code> attribute.<span>[1]</span>
+
+> **Note**: Only elements with <code>name</code> attribute are submitted.<span>[1]</span>
+
+> **Note**: <code>name</code> & <code>value</code> pairs get submitted for each element. The radio input is affected by the name attribute.
+
+> **Note**: If you omit the <code>value</code> attribute, the submitted form data uses the default value, which is <code>on</code>. So the <code>value</code> attribute needs to be set to something to identify the option.<span>[1]</span> 
+
+> **Note**: Best Practices is to enter <code>name</code>&<code>value</code> attribute-values in lowercase.
+
+> **Note**: You can set a checkbox or radio button to be checked by default using the checked attribute.<span>[1]</span>
+
+<li>You can require specific form fields so that your user will not be able to <code>submit</code> your form until he or she has filled them out.<span>[1]</span></li>
+            <li>For example, if you wanted to make a text input field required, you can just add the attribute <code>required</code> within your <code>input</code> element, like this: <code>&lt;input type="text" required&gt;</code><span>[1]</span></li>
+            <li>for full project: check the <a href="https://github.com/MrRamoun/front-end_training/tree/master/web-projects/web-dev-simplified-form-project">web-dev-simplified-form-project</a> in the root of the repo.</li>
+</ul>
     </ul>
 </details> 
-
 
 ### Html in 3 words
 
 - Markup <code>--></code> marks up content (helps in seo and other stuff like styling, controling the order of elements ...etc)
 - Structure <code>--></code> builds the structure of a web page
 - Text <code>--></code> text embeded in an html page
+
+### What Can People do with HTML<span>[2]</span>
+
+- **Designers**: can create more attractive and usable sites.<span>[2]</span>
+- **Website Editors**: can create better content.<span>[2]</span>
+- **Marketers**: can communicate with their audience more effectively.<span>[2]</span>
+- **Managers**: can commission better sites.<span>[2]</span>
+
+### How Html is used to create webpages<span>[2]</span>
+
+1. you start by writing down the words you want to appear on your page.<span>[2]</span>
+2. You then add tags or elements to the words so that the browser knows what is a heading, where a paragraph begins and ends, and so on.<span>[2]</span>
+
+### Html Best Practices
+
+- attribute scheme: <code>type="" name="" vlaue="" id=""</code>
 
 ### Test Yourself
 
@@ -184,6 +300,14 @@ When users click the Contacts link, they'll be taken to the section of the webpa
     <summary>Why use Html5 new tags?</summary>
         <ul><ul>
             <li>These tags give a descriptive structure to your HTML, make your HTML easier to read (readability), and help with Search Engine Optimization (SEO) and accessibility.</li>
+        </ul></ul>
+</details>
+
+<details>
+    <summary>Why use Dead links?</summary>
+        <ul><ul>
+            <li>Sometimes you want to add <code>a</code> elements to your website before you know where they will link.<span>[1]</span></li>
+            <li>This is also handy when you're changing the behavior of a link using JavaScript.<span>[1]</span></li>
         </ul></ul>
 </details>
 
@@ -256,6 +380,13 @@ When users click the Contacts link, they'll be taken to the section of the webpa
     </ul></ul>
 </details>  
 
+<details>
+    <summary>Why only elements with <code>name</code> attribute are submitted?</summary>
+    <ul><ul>
+        <li></li>
+    </ul></ul>
+</details>
+
 
 <!-- <details>
   <summary>Why do we separate HTML and CSS?</summary>
@@ -268,5 +399,7 @@ When users click the Contacts link, they'll be taken to the section of the webpa
 <!-- 
 [0] my own understanding of the subject ([0] can be used or removed -> blank by default)
 [1] https://freecodecamp.org 
-
+[2] Duckett, Jon, HTML and CSS Design and Build Websites, 2011, John Wiley & Sons
+[3] Web Dev Simplified, Youtube Channel, https://www.youtube.com/watch?v=fNcJuPIZ2WE&t=52s
+[4] MDN Refrences, https://developer.mozilla.org/en-US/docs/web
 -->
