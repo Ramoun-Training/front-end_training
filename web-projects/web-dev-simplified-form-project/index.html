@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms in html</title>
+</head>
+
+<body>
+    <form action="result.html" method="GET">
+        <div class="email">
+            <label>email
+                <input type="email" name="email" required />
+            </label>
+        </div>
+
+        <div class="password">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required />
+        </div>
+
+        <div class="username">
+            <label for="username">username</label>
+            <input type="text" name="username" id="username" />
+        </div>
+
+        <div class="age">
+            <label for="age">age</label>
+            <input type="number" name="age" id="age" min="1" max="200" step="10" />
+        </div>
+
+        <div class="birthday">
+            <label for="birthday">birthday</label>
+            <input type="date" name="date" id="birthday" min="2000-01-01" />
+        </div>
+
+        <div class="food">
+            Food:
+
+            <div class="apples">
+                <label for="apples">apples
+                    <input type="checkbox" name="food" value="apples" id="apples" checked />
+                </label>
+            </div>
+
+            <div class="bananas">
+                <label for="bananas">bananas
+                    <input type="checkbox" name="food" value="bananas" id="bananas" />
+                </label>
+            </div>
+
+            <div class="other-food">
+                <label for="other-food">other
+                    <input type="checkbox" name="food" value="other" id="other-food" />
+                </label>
+            </div>
+
+        </div>
+
+        <div class="gender">
+            gender:
+
+            <div class="male">
+                <label for="male">male
+                    <input type="radio" name="gender" id="male" value="male" />
+                </label>
+            </div>
+
+            <div class="female">
+                <label for="female">female
+                    <input type="radio" name="gender" id="female" value="female" checked />
+                </label>
+            </div>
+
+            <div class="other-gender">
+                <label for="other-gender">other
+                    <input type="radio" name="gender" id="other-gender" value="other" />
+                </label>
+            </div>
+
+        </div>
+
+        <div class="terms">
+            <label for="terms">
+                <input type="checkbox" name="terms" id="terms" required />
+                I Accept the <a href="#">terms and conditons</a> of the app.
+            </label>
+        </div>
+
+        <div class="buttons">
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+            <button type="button">back</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
