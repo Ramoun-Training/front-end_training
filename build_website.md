@@ -27,6 +27,8 @@
 4. Development
 </details>
 
+> **Note**: <u>Small websites</u> are often written just using HTML and CSS.<br> 
+> <u>Larger websites</u> — in particular those that are updated regularly and use a content management system (CMS), blogging tools, or e-commerce software — often make use of more complex technologies on the web server, but these technologies are actually used to produce HTML and CSS that is then sent to the browser. So, if your site uses these technologies, you will be able to use your new HTML and CSS knowledge to take more control over how your site looks.<span>[2]</span>
 
 
 <!-- <details>
