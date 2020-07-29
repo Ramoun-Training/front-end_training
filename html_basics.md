@@ -284,8 +284,53 @@ Here's an example of a checkbox:
 <details>
   <summary>Why HTML was named HTML?</summary>
     <ul><ul>
-        <li>The HyperText part of HTML comes from the early days of the web and its original use case. Pages usually contained static documents that contained references to other documents. These references contained hypertext links used by the browser to navigate to the reference document so the user could read the reference document without having to manually search for it.<span>[1]<span</li>        
+        <li>The HyperText part of HTML comes from the early days of the web and its original use case. Pages usually contained static documents that contained references to other documents. These references contained hypertext links used by the browser to navigate to the reference document so the user could read the reference document without having to manually search for it.<span>[1]<span></li>        
     </ul></ul>
+</details>
+
+<details>
+  <summary>What is the main Structure of any html document?</summary>
+    <ul><ul>
+        <li>At the top of the document, we need to tell the browser which version of HTML the page is using. HTML is an evolving language, and is updated regularly. Most major browsers support the latest specification, which is HTML5. However, older web pages may use previous versions of the language.</li>
+        <li>We tell the browser this information by adding the <code>&lt;!DOCTYPE ...&gt;</code> tag on the first line, where the ... part is the version of HTML. For HTML5, we use <code>&lt;!DOCTYPE html&gt;</code>.<span>[1]<span></li>
+
+> **Note**: The ! and uppercase DOCTYPE is important, especially for older browsers. The html is not case sensitive.<span>[1]<span>        
+<li>Next, the rest of the HTML code needs to be wrapped in <code>html</code> tags. The opening <code>&lt;html&gt;</code> goes directly below the <code>&lt;!DOCTYPE html&gt;</code> line, and the closing <code>&lt;/html&gt;</code> goes at the end of the page.<span>[1]<span></li>
+
+```html
+<!DOCTYPE html>
+<html>
+  <!-- Your HTML code goes here -->
+</html>
+```
+</ul></ul>
+</details>
+
+<details>
+  <summary>What is the importance of structuer in html?</summary>
+    <ul><ul>
+        <li>In all kinds of documents, structure is very important in helping readers to understand the messages you are trying to convey and to navigate around the document (increases readability). So, in order to learn how to write web pages, it is very important to understand how to structure documents.<span>[2]<span></li>        
+    </ul></ul>
+</details>
+
+<details>
+  <summary>How Structure helps readers understand the stories in the newspaper?</summary>
+    <ul><ul>
+        <li>For the stories we read in a newspaper: for each story, there will be a <em>headline</em>, some <em>text</em>, and possibly some <em>images</em>. If the article is a long piece, there may be subheadings that split the story into separate sections or quotes from those involved.<span>[2]<span></li>        
+    </ul></ul>
+</details>
+
+<details>
+  <summary>how offline structure is similar to online structreu?</summary>
+    <ul><ul>
+        <li>The structure is very similar when a news story is viewed online (although it may also feature audio or video).</li>        
+        <li>Example of a word document structure: <em>a document might start with a large heading, followed by an introduction or the most important information. This might be expanded upon under subheadings lower down on the page</em><span>[2]<span></li>
+
+> **Note**: The use of headings and subheadings in any document often reflects a hierarchy of information.<span>[2]<span>
+
+> **Note**:  When using a word processor to create a document, <em>we separate out the text to give it structure</em>. Each topic might have a new paragraph, and each section can have a heading to describe what it covers.<span>[2]<span>
+
+</ul></ul>
 </details>
 
 <details>
@@ -377,6 +422,9 @@ Here's an example of a checkbox:
     <ul><ul>        
         <li>Div: is a block level element that can contain a bunch of other html elements.</li>
         <li>Divs are mainly used to group multiple html elements together</li>
+        <li>The <code>div</code> element, also known as a division element, is a general purpose container for other elements.<span>[1]</span></li>
+        <li>The <code>div</code> element is probably the most commonly used HTML element of all.<span>[1]</span></li>
+        <li>Just like any other non-self-closing element, you can open a <code>div</code> element with <code>&lt;div&gt;</code> and close it on another line with <code>&lt;/div&gt;</code>.<span>[1]</span></li>
     </ul></ul>
 </details>  
 
