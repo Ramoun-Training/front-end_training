@@ -251,6 +251,42 @@ Here's an example of a checkbox:
 <li>You can require specific form fields so that your user will not be able to <code>submit</code> your form until he or she has filled them out.<span>[1]</span></li>
             <li>For example, if you wanted to make a text input field required, you can just add the attribute <code>required</code> within your <code>input</code> element, like this: <code>&lt;input type="text" required&gt;</code><span>[1]</span></li>
             <li>for full project: check the <a href="https://github.com/MrRamoun/front-end_training/tree/master/web-projects/web-dev-simplified-form-project">web-dev-simplified-form-project</a> in the root of the repo.</li>
+            <li>another important element is the <code>select</code> element that represents a drop down menu.</li>
+
+```html
+<div class="eye-color">
+    <label for="eye-color">Eye Color: </label>
+    <select name="eye-color" id="eye-color" multiple>
+        <option value="green">Green</option>                
+        <option label="blue" value="blue"></option>                
+    </select>
+</div>
+```            
+> **Note**: the <code>multiple</code> attribute allows selecting more than one option because the <code>select</code> element permits the selection of one option only be default.
+
+<li>another important element is the <code>textarea</code> element that allows entering multiline text.It is very useful for passages or paragraphs or editors.</li>
+
+```html 
+ <div class="bio">
+    <label for="bio">Bio</label>
+    <textarea name="bio" id="bio" cols="30" rows="10">hello from the other side</textarea>
+</div>
+```
+
+> **Note**: the value goes inside the <code>textarea</code> element not inside a <code>value</code> attribute.<span>[3]</span>
+
+> **Note**: <code>textarea</code> converts all of the white space.So, if you have a default value for the <code>textarea</code>, you wanna make sure that there is no white space between the opening and the closing tags.<span>[3]</span>
+
+> **Note**: when the form is submitted, the <code>textarea</code> is formatted so that all white space is converted to one charachter white space.<span>[0]</span>
+
+> **Note**: <code>select</code> and <code>textarea</code> are the only two anomly type of elements that don't actually use the <code>input</code> for their element, so now let's go back to the.<span>[3]</span>
+
+<li>another really <strong>interesting</strong> element is the hidden (<code>&lt;input type="hidden"&gt;</code>) input element. The hidden input element doesn't show on the page but when the form is submitted the <code>name</code> and <code>value</code> attributes are passed like any other input element.Users are not able to interact at all with hidden inputs.<span>[3]</span></li>
+
+<li>one of the most important types of <code>input</code> element is the <code>type="file"</code> which allows the user to upload files to server through a file picker dialogue.<span>[0][3]</li>
+
+> **Note**: for the <code>input type="file"</code> to be userful for the server you need to specify an attribute to the <code>form</code> tag called <code>enctype</code> with attribute-value of <code>"multipart/formdata"</code>.What that does is simple "it tells the server that we are sending our form in multiple parts and not in one part" because files are very large, we can't send them in one part.<span>[3]</span>
+
 </ul>
     </ul>
 </details> 
@@ -362,7 +398,44 @@ Here's an example of a checkbox:
         <li>apply one style (from one style sheet) to multiple html docs.</li>
         <li></li>
     </ul></ul>
-</details>  
+</details> 
+
+<details>
+  <summary>Why do we need a seprate <code>head</code> and <code>body</code> tags?</summary>
+    <ul><ul>
+        <li>it adds another level of organization in the HTML document within the html (opening and closing) tags.<span>[1]</span></li>        
+    </ul></ul>
+</details>
+
+<details>
+  <summary>How to use the head tag?</summary>
+    <ul><ul>
+        <li>Any markup with information about the html page would go into the head tag.<span>[1]</span></li>        
+        <Li>Metadata elements, such as link, meta, title, and style, typically go inside the head element.<span>[1]</span></li>
+
+> **Note**: if you tried to use non-meta tag inside of the <code>head</code> tag, the browser gonna move that tag to the <code>body</code> tag.<span>[1]</span>
+
+</ul></ul>
+</details>
+
+<details>
+  <summary>How to use the body tag?</summary>
+    <ul><ul>
+        <li>Any markup with the content of the page (what displays for a user) would go into the body tag.<span>[1]</span></li>        
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- metadata elements -->
+  </head>
+  <body>
+    <!-- page contents -->
+  </body>
+</html>
+```
+</ul></ul>
+</details>
 
 <details>
   <summary>What are classes and IDs (and how are they different)?</summary>
@@ -435,6 +508,14 @@ Here's an example of a checkbox:
     </ul></ul>
 </details>
 
+<details>
+  <summary>Why do we need hidden input elements?</summary>
+    <ul><ul>
+        <li>they are really great when you are trying to do some fancy manipulation with javascript or you wanna send something down from a server.<span>[3]</span></li>
+
+> **Note**: when creating a generic form in html, the hidden input is never going to be useful unless you are doing something fancy in javascript or on a server<span>[3]</span>.
+</ul></ul>
+</details>
 
 <!-- <details>
   <summary>Why do we separate HTML and CSS?</summary>
