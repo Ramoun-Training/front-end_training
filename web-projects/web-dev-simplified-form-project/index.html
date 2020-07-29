@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="result.html" method="GET">
+    <form action="result.html" method="GET" enctype="multipart/form-data">
         <div class="email">
             <label>email
                 <input type="email" name="email" required />
@@ -79,6 +79,43 @@
                 </label>
             </div>
 
+        </div>
+
+        <div class="eye-color">
+            <label for="eye-color">Eye Color: </label>
+            <select name="eye-color" id="eye-color">
+                <option value="green">Green</option>                
+                <option label="blue" value="blue"></option>                
+            </select>
+        </div>
+
+        <div class="bio">
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio" cols="30" rows="10">hello from the other side
+            </textarea>
+        </div>
+
+        <!-- this is a hidden input  -->
+        <input type="hidden" name="hidden" value="you found out the little secret">
+
+        <div class="file">
+            <label for="file">Upload your files:</label>
+            <input type="file" name="file" id="file">
+        </div>
+
+        <div class="phone">
+            <label for="phone">Enter your phone: </label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+
+        <div class="url">
+            <label for="url">enter the url:</label>
+            <input type="url" name="url" id="url">
+        </div>
+
+        <div class="color">
+            <label for="color">pick a color:</label>
+            <input type="color" name="color" id="color">
         </div>
 
         <div class="terms">
