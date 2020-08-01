@@ -1,7 +1,7 @@
 # # css_training
 
 This is a training file/cheatsheet for **CSS** language (a styling language for html docs).
-<br><br>
+<br><br><br>
 
 
 ## What is CSS?
