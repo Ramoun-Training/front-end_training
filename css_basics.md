@@ -1,9 +1,17 @@
-# #css_training
+==================
+#css_training
+==================
+
+:Author: R}AM#UN>
+
+.. contents::
+    :backlinks: none
+
+.. sectnum::
 
 ## What is CSS?
 
-<div class="intro-layout"><h2>Introduction to Basic CSS</h2>
-<p>Cascading Style Sheets (CSS) tell the browser how to display the text and other content that you write in HTML.</p>
+**Cascading Style Sheets (CSS)** tell the browser how to display the text and other content that you write in HTML.</p>
 <p>Note that CSS is <mark>case-sensitive</mark> so be careful with your capitalization.</p>
 <p>CSS has been adopted by all major browsers and allows you to control:</p>
 <ul>
