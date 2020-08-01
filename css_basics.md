@@ -39,7 +39,7 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
     
 > **Note**: it is a good practice to end inline style declarations with a `;` .
     
-<br><br>
+<br>
 
 ## Learn CSS
 
