@@ -1,8 +1,11 @@
 # #css_training
 
-## What is CSS?
+This is a training file/cheatsheet for **CSS** language (a styling language for html docs).
 
-**Cascading Style Sheets (CSS)** tell the browser how to display the text and other content that you write in HTML.[[1]](#1)
+### What is CSS?
+
+**Cascading Style Sheets (CSS)** tells the browser how to display the text and other content that you write in HTML.[[1]](#1)
+=
 
 > **Note**: CSS is <mark>case-sensitive</mark> so be careful with your capitalization.[[1]](#1)
 
