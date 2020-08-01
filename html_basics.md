@@ -396,7 +396,7 @@ Here's an example of a checkbox:
   <summary>Why do we separate HTML and CSS?</summary>
     <ul><ul>
         <li>apply one style (from one style sheet) to multiple html docs.</li>
-        <li></li>
+        <li>This improves the readability and reusability of your code.[1]</li>
     </ul></ul>
 </details> 
 
@@ -440,9 +440,17 @@ Here's an example of a checkbox:
 <details>
   <summary>What are classes and IDs (and how are they different)?</summary>
     <ul><ul>
+        <li><strong>Classes</strong>: are reusable styles that can be added to HTML elements.[1]</li>
         <li><strong>Classes</strong>: are attributes of elements that allows grouping of bunch of elements so that it becomes easier to style or manipulate them [i.e: multiple elements can have the same class].</li>
         <li><strong>IDs</strong>: are attributes of elements that allows distinguishing a specific element [i.e: multiple elements shouldn't have the same id, because ids should be unique].<span>[0]</span> An <code>id</code> is an attribute that uniquely describes an element.<span>[1]</span></li>
-    </ul></ul>
+    </ul>
+
+- There are several benefits to using `id` attributes: You can use an id to style a single element and later you'll learn that you can use them to select and modify specific elements with JavaScript.<span>[1]</span>
+
+- One cool thing about `id` attributes is that, like classes, you can style them using CSS. However, an id is not reusable and __should only be applied to one element__. An id also has a higher specificity (importance: _id > class > element_) than a class so if both are applied to the same element and have conflicting styles, the styles of the `id` will be applied.
+
+> **Note**: `id` attributes should be unique. Browsers won't enforce this, but it is a widely agreed upon best practice. So please don't give more than one element the same id attribute.<span>[1]</span>
+ </ul>
 </details>  
 
 <details>
