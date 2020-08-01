@@ -1,13 +1,4 @@
-==================
-#css_training
-==================
-
-:Author: R}AM#UN>
-
-.. contents::
-    :backlinks: none
-
-.. sectnum::
+# #css_training
 
 ## What is CSS?
 
