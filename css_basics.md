@@ -7,7 +7,7 @@ This is a training file/cheatsheet for **CSS** language (a styling language for 
 ## What is CSS?
 
 **Cascading Style Sheets (CSS)** tells the browser how to display the text and other content that you write in HTML.[[1]](#1 "freecodecamp")
-=
+===
 
 > **Note**: CSS is <mark>case-sensitive</mark> so be careful with your capitalization.[[1]](#1 "freecodecamp")
 
@@ -44,7 +44,7 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
 ## Learn CSS
 
 <img width="600px" src="https://mdn.mozillademos.org/files/9461/css-declaration-small.png">
-=
+=====================================
 
 > **Note**: The whole structure is called a **ruleset**. (The term ruleset is often referred to as just rule.) 
 
