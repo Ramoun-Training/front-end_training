@@ -39,9 +39,44 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
     
 > **Note**: it is a good practice to end inline style declarations with a `;` .
     
-<br>
+<br><br>
 
 ## Learn CSS
+
+####  Anatomy & syntax of CSS:[[3]](#3 "MDN")
+
+<img width="600px" src="https://mdn.mozillademos.org/files/9461/css-declaration-small.png">
+
+The whole structure is called a **ruleset**. (The term ruleset is often referred to as just rule.) 
+
+Note the names of the individual parts:
+</p>
+<ul>
+    <li><strong>Selector:</strong>
+    This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, <code>&lt;p&gt;</code> elements). To style a different element, change the selector.</li>
+    <li>
+    <strong>Declaration:</strong>
+    This is a single rule like <code>color: red;</code>. It specifies which of the element's properties you want to style.
+    </li>
+    <li><strong>Properties</strong>
+    These are ways in which you can style an HTML element. (In this example, color is a property of the <code>&lt;p&gt;</code> elements.) In CSS, you choose which properties you want to affect in the rule.</li>
+    <li><strong>Property value</strong>
+    To the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances for a given property. (For example, there are many <code>color</code> values in addition to <code>red</code>.)</li>
+</ul>
+<em>Note the other important parts of the syntax:</em>
+<ul>
+    <li>Apart from the selector, each ruleset must be wrapped in curly braces. (<code>{}</code>)</li>
+    <li>Within each declaration, you must use a colon (<code>:</code>) to separate the property from its value or values.</li>
+    <li>Within each ruleset, you must use a semicolon (<code>;</code>) to separate each declaration from the next one.</li>
+</ul>
+
+```css
+p {
+  color: red;
+  width: 500px;
+  border: 1px solid black;
+}
+```
 
 <details>
 <summary><b><u>list of all properties:</u></b></summary>
@@ -88,40 +123,12 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
 </ul>
 </details>
 
-<details>
-<summary><b><u>Anatomy of a CSS ruleset:</u></b></summary>
 
-<img src="https://mdn.mozillademos.org/files/9461/css-declaration-small.png">
+
+
 
 <p>
-The whole structure is called a <strong>ruleset</strong>. (The term ruleset is often referred to as just rule.) Note the names of the individual parts:
-</p>
-<ul>
-    <li><strong>Selector:</strong>
-    This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, <code>&lt;p&gt;</code> elements). To style a different element, change the selector.</li>
-    <li>
-    <strong>Declaration:</strong>
-    This is a single rule like <code>color: red;</code>. It specifies which of the element's properties you want to style.
-    </li>
-    <li><strong>Properties</strong>
-    These are ways in which you can style an HTML element. (In this example, color is a property of the <code>&lt;p&gt;</code> elements.) In CSS, you choose which properties you want to affect in the rule.</li>
-    <li><strong>Property value</strong>
-    To the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances for a given property. (For example, there are many <code>color</code> values in addition to <code>red</code>.)</li>
-</ul>
-<em>Note the other important parts of the syntax:</em>
-<ul>
-    <li>Apart from the selector, each ruleset must be wrapped in curly braces. (<code>{}</code>)</li>
-    <li>Within each declaration, you must use a colon (<code>:</code>) to separate the property from its value or values.</li>
-    <li>Within each ruleset, you must use a semicolon (<code>;</code>) to separate each declaration from the next one.</li>
-</ul>
 
-```css
-p {
-  color: red;
-  width: 500px;
-  border: 1px solid black;
-}
-```
 </details>
 
 <details>
