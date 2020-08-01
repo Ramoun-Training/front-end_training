@@ -22,6 +22,8 @@ This is a training file/cheatsheet for **CSS** language (a styling language for 
 - decorations
 - transitions
 
+<br>
+
 #### There are three main ways to apply CSS styling:[[1]](#1 "freecodecamp")
 
 - You can apply <ins>**inline styles**</ins> directly to HTML elements with the `style` attribute. 
@@ -29,6 +31,8 @@ This is a training file/cheatsheet for **CSS** language (a styling language for 
 - Finally, you can write CSS rules in an <ins>**external style sheet**</ins>, then reference that file in the HTML document. 
  
 > **Note**: Even though the first two options have their use cases, most developers prefer external style sheets _because they keep the styles separate from the HTML elements. **This improves the readability and reusability of your code**_.
+
+<br>
 
 #### How CSS works:[[1]](#1 "freecodecamp")
 
@@ -38,7 +42,7 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
     
 > **Note**: it is a good practice to end inline style declarations with a `;` .
     
-</div>
+<br>
 
 <details>
 <summary><b><u>list of all properties:</u></b></summary>
