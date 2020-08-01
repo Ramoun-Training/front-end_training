@@ -1,4 +1,4 @@
-# # css_training
+# #css_training
 
 This is a training file/cheatsheet for **CSS** language (a styling language for html docs).
 <br><br><br>
@@ -10,6 +10,8 @@ This is a training file/cheatsheet for **CSS** language (a styling language for 
 =
 
 > **Note**: CSS is <mark>case-sensitive</mark> so be careful with your capitalization.[[1]](#1 "freecodecamp")
+
+<br>
 
 #### CSS has been adopted by all major browsers and allows you to control:[[1]](#1)
 - color
