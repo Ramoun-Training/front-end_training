@@ -1,6 +1,72 @@
-# CSS Basics
+# #css_training
 
-### What is CSS?
+## What is CSS?
+
+<div class="intro-layout"><h2>Introduction to Basic CSS</h2>
+<p>Cascading Style Sheets (CSS) tell the browser how to display the text and other content that you write in HTML.</p>
+<p>Note that CSS is <mark>case-sensitive</mark> so be careful with your capitalization.</p>
+<p>CSS has been adopted by all major browsers and allows you to control:</p>
+<ul>
+<li>color</li>
+<li>fonts</li>
+<li>positioning</li>
+<li>spacing</li>
+<li>sizing</li>
+<li>decorations</li>
+<li>transitions</li>
+</ul>
+<p>There are three main ways to apply CSS styling. You can apply inline styles directly to HTML elements with the <code class="language-text">style</code> attribute. Alternatively, you can place CSS rules within <code class="language-text">style</code> tags in an HTML document. Finally, you can write CSS rules in an external style sheet, then reference that file in the HTML document. Even though the first two options have their use cases, most developers prefer external style sheets because they keep the styles separate from the HTML elements. This improves the readability and reusability of your code.</p>
+<p>The idea behind CSS is that you can use a selector to target an HTML element in the DOM (Document Object Model) and then apply a variety of attributes to that element to change the way it is displayed on the page.</p>
+<p>In this section, you'll see how adding CSS styles to the elements of your CatPhotoApp can change it from simple text to something more.</p>
+
+> **Note**: that it is a good practice to end inline style declarations with a `;` .
+    
+</div>
+
+<details>
+<summary><b><u>list of all properties:</u></b></summary>
+<ul>
+
+<li><b>color</b>:
+    changes color of element.
+</li>
+
+<li><b>font-size</b>:
+    change font-size of text.
+</li>
+
+<li><b>font-family</b>:
+    change font of text.
+</li>
+
+
+
+> **Note**: there is 2 kinds of fonts: local system fonts & non-standard custom web fonts
+
+> **Note**: `Google Fonts` is a free library of web fonts that you can use in your CSS by referencing the font's URL.
+
+> **Note**: Family names are `case-sensitive` and need to be wrapped in quotes if there is a space in the name. For example, you need quotes to use the `"Open Sans"` font, but not to use the `Lobster` font.
+
+<li><b>width</b>:
+    controls an element's width. 
+</li>
+
+<li><b>border</b>:
+    
+  * creates borders around elements.
+  * it has some properties (sub-propertise) :
+      - `color`: obvio,
+      - `width`: thickness of the border.
+      - `style`: `solid`, `dotted`, `dashed` ..etc. 
+      - `radius`: controls the radius of the conrners of a border (default: 0px).
+          > **Note**: In addition to pixels, you can also specify the `border-radius` using a percentage.
+      - 
+</li>
+
+> **Note**: you can apply multiple classes to an element using its `class` attribute, by separating each class name with a space.
+
+</ul>
+</details>
 
 <details>
 <summary><b><u>Anatomy of a CSS ruleset:</u></b></summary>
@@ -139,7 +205,33 @@ p, li {
 
 </details>
 
+<details>
+<summary><u><b>more about fonts:</b></u></summary>
+
+There are several default fonts that are available in all browsers. These generic font families include `monospace`, `serif` and `sans-serif`
+
+When one font isn't available, you can tell the browser to "degrade" to another font.
+
+For example, if you wanted an element to use the `Helvetica` font, but degrade to the `sans-serif` font when `Helvetica` isn't available, you will specify it as follows:
+
+```css
+
+p {
+  font-family: Helvetica, sans-serif;
+}
+```
+
+> **Note**: Generic font family names are not case-sensitive. Also, they do not need quotes because they are CSS keywords.
+
+> **Note**: If you have the font installed on your computer, you won't see the degradation because your browser is able to find the font.
+
+</details>
+
 ### CSS: all about boxes
+
+You may have already noticed this, but all HTML elements are essentially little rectangles.[1]
+
+Three important properties control the space that surrounds each HTML element: `padding`    , `margin`, and `border`.[1]
 
 <details>
 <summary><b><u>Boxes in CSS:</u></b></summary>
@@ -147,9 +239,18 @@ Something you'll notice about writing CSS: a lot of it is about boxes. This incl
 
 CSS layout is mostly based on the box model. Each box taking up space on your page has properties like:
 <ul>
-<li><code>padding</code>, the space around the content. In the example below, it is the space around the paragraph text.</li>
+<li><code>padding</code>, the space around the content. In the example below, it is the space around the paragraph text.[]
+
+controls the amount of space between the element's content and its `border`.[1]
+</li>
 <li><code>border</code>, the solid line that is just outside the padding.</li>
-<li><code>margin</code>, the space around the outside of the border.</li>
+<li><code>margin</code>, the space around the outside of the border.[]
+
+controls the amount of space between an element's `border` and surrounding elements.[1]
+
+> **Note**: If you set an element's margin to a negative value, the element will grow larger.[1]
+
+</li>
 </ul>
 
 <img src="https://mdn.mozillademos.org/files/9443/box-model.png">
