@@ -2,18 +2,19 @@
 
 ## What is CSS?
 
-**Cascading Style Sheets (CSS)** tell the browser how to display the text and other content that you write in HTML.</p>
-<p>Note that CSS is <mark>case-sensitive</mark> so be careful with your capitalization.</p>
-<p>CSS has been adopted by all major browsers and allows you to control:</p>
-<ul>
-<li>color</li>
-<li>fonts</li>
-<li>positioning</li>
-<li>spacing</li>
-<li>sizing</li>
-<li>decorations</li>
-<li>transitions</li>
-</ul>
+**Cascading Style Sheets (CSS)** tell the browser how to display the text and other content that you write in HTML.[[1]](#1)
+
+> **Note**: CSS is <mark>case-sensitive</mark> so be careful with your capitalization.[[1]](#1)
+
+CSS has been adopted by all major browsers and allows you to control:
+- color
+- fonts
+- positioning
+- spacing
+- sizing
+- decorations
+- transitions
+
 <p>There are three main ways to apply CSS styling. You can apply inline styles directly to HTML elements with the <code class="language-text">style</code> attribute. Alternatively, you can place CSS rules within <code class="language-text">style</code> tags in an HTML document. Finally, you can write CSS rules in an external style sheet, then reference that file in the HTML document. Even though the first two options have their use cases, most developers prefer external style sheets because they keep the styles separate from the HTML elements. This improves the readability and reusability of your code.</p>
 <p>The idea behind CSS is that you can use a selector to target an HTML element in the DOM (Document Object Model) and then apply a variety of attributes to that element to change the way it is displayed on the page.</p>
 <p>In this section, you'll see how adding CSS styles to the elements of your CatPhotoApp can change it from simple text to something more.</p>
@@ -377,3 +378,20 @@ body {
   <li>What is the “default stylesheet” or “user agent stylesheet”?</li>
   <li>Why use a CSS reset file?</li>
 </ul>
+
+<span id="sdsd">hi</span>
+
+## Refrences
+
+- <span id="0">[0]</span> [my own understanding of the subject](https://mrramoun.github.io "[0] can be used or removed -> blank by default").
+
+- <span id="1">[1]</span> [freecodecamp](https://freecodecamp.org "website").
+
+- <span id="2">[2]</span> [Duckett, Jon, HTML and CSS Design and Build Websites, 2011, John Wiley & Sons](http://www.htmlandcssbook.com/ "book").
+
+- <span id="3">[3]</span> [MDN Refrences](https://developer.mozilla.org/en-US/docs/web "website").
+
+<!-- 
+
+[3] Web Dev Simplified, Youtube Channel, https://www.youtube.com/watch?v=fNcJuPIZ2WE&t=52s
+-->
