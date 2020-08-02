@@ -89,41 +89,41 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
 
       here are many different types of selectors. The examples above use element selectors, **which select all elements of a given type**. But we can make more specific selections as well. Here are some of the more common types of selectors:
 
-    <table style="width:100%" border="2">
+      <table style="width:100%" border="2">
       <tr>
-      <th>Selector name</th>
-      <th>What does it select	</th>
-      <th>Example</th>
+        <th>Selector name</th>
+        <th>What does it select	</th>
+        <th>Example</th>
       </tr>
       <tr>
-      <td>Element selector (sometimes called a tag or type selector)</td>
-      <td>All HTML elements of the specified type.</td>
-      <td><code>p</code><br>
-      selects <code>&lt;p&gt;</code></td>
+        <td>Element selector (sometimes called a tag or type selector)</td>
+        <td>All HTML elements of the specified type.</td>
+        <td><code>p</code><br>
+        selects <code>&lt;p&gt;</code></td>
       </tr>
       <tr>
-      <td>ID selector</td>
-      <td>The element on the page with the specified ID. On a given HTML page, each id value <strike>must</strike> <mark>should</mark> be unique.</td>
-      <td><code>#my-id</code><br>
-      selects <code>&lt;p id="my-id"&gt;</code> or <code>&lt;a id="my-id"&gt;</code></td>
+        <td>ID selector</td>
+        <td>The element on the page with the specified ID. On a given HTML page, each id value <strike>must</strike> <mark>should</mark> be unique.</td>
+        <td><code>#my-id</code><br>
+        selects <code>&lt;p id="my-id"&gt;</code> or <code>&lt;a id="my-id"&gt;</code></td>
       </tr>
       <tr>
-      <td>Class selector</td>
-      <td>The element(s) on the page with the specified class. Multiple instances of the same class can appear on a page.</td>
-      <td><code>.my-class</code><br>
+        <td>Class selector</td>
+        <td>The element(s) on the page with the specified class. Multiple instances of the same class can appear on a page.</td>
+        <td><code>.my-class</code><br>
     selects <code>&lt;p class="my-class"&gt;</code> and <code>&lt;a class="my-class"&gt;</code>
     </td>
       </tr>
       <tr>
-      <td>Attribute selector</td>
-      <td>The element(s) on the page with the specified attribute.</td>
-      <td><code>img[src]</code><br>
+        <td>Attribute selector</td>
+        <td>The element(s) on the page with the specified attribute.</td>
+        <td><code>img[src]</code><br>
     selects <code>&lt;img src="myimage.png"&gt;</code> but not <code>&lt;img&gt;</code</td>
       </tr>
       <tr>
-      <td>Pseudo-class selector</td>
-      <td>The specified element(s), but only when in the specified state. (For example, when a cursor hovers over a link.)</td>
-      <td><code>a:hover</code><br>
+        <td>Pseudo-class selector</td>
+        <td>The specified element(s), but only when in the specified state. (For example, when a cursor hovers over a link.)</td>
+        <td><code>a:hover</code><br>
     selects <code>&lt;a&gt;</code>, but only when the mouse pointer is hovering over the link.</td>
       </tr>
     </table>
@@ -131,127 +131,85 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
     > [!TIP]
     > There are many more selectors to discover. To learn more, see the [MDN Selectors guide](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors).
 
-####  CSS Mini-refrence:[[3]](#3 "MDN")
+<br>
 
+#### CSS declarations:
 
-<details>
-<summary><b><u>list of all properties:</u></b></summary>
-<ul>
+1. **Basic properties**[[1]](#1 "freecodecamp")
 
-<li><b>color</b>:
-    changes color of element.
-</li>
+    *   **color**: 
+          changes color of elements.
 
-<li><b>font-size</b>:
-    change font-size of text.
-</li>
+    *   **width:**
+          controls an element's width. 
 
-<li><b>font-family</b>:
-    change font of text.
-</li>
+    *   **border:**
+        
+        - creates borders around elements.
+        - it has some properties (sub-propertise) :
+            + `color`: obvio,
+            + `width`: thickness of the border.
+            + `style`: `solid`, `dotted`, `dashed` ..etc. 
+            + `radius`: controls the radius of the conrners of a border (default: 0px).
+                > **Note**: In addition to pixels, you can also specify the `border-radius` using a percentage.
+        
 
-
-
-> **Note**: there is 2 kinds of fonts: local system fonts & non-standard custom web fonts
-
-> **Note**: `Google Fonts` is a free library of web fonts that you can use in your CSS by referencing the font's URL.
-
-> **Note**: Family names are `case-sensitive` and need to be wrapped in quotes if there is a space in the name. For example, you need quotes to use the `"Open Sans"` font, but not to use the `Lobster` font.
-
-<li><b>width</b>:
-    controls an element's width. 
-</li>
-
-<li><b>border</b>:
+    > **Note**: you can apply multiple classes to an element using its `class` attribute, by separating each class name with a space.
     
-  * creates borders around elements.
-  * it has some properties (sub-propertise) :
-      - `color`: obvio,
-      - `width`: thickness of the border.
-      - `style`: `solid`, `dotted`, `dashed` ..etc. 
-      - `radius`: controls the radius of the conrners of a border (default: 0px).
-          > **Note**: In addition to pixels, you can also specify the `border-radius` using a percentage.
-      - 
-</li>
+2. **Fonts & Text**[[1]](#1 "freecodecamp")
+    
+    *   **font-size**: change font-size of text.
+    *   **font-family**: change font of text.
+        > **Note**: there is 2 kinds of fonts: local system fonts & non-standard custom web fonts
+        
+        > **Note**: `Google Fonts` is a free library of web fonts that you can use in your CSS by referencing the font's URL.
+        
+        > **Note**: Family names are `case-sensitive` and need to be wrapped in quotes if there is a space in the name. For example, you need quotes to use the `"Open Sans"` font, but not to use the `Lobster` font.
 
-> **Note**: you can apply multiple classes to an element using its `class` attribute, by separating each class name with a space.
+> **Note:** There are several default fonts that are available in all browsers. These generic font families include `monospace`, `serif` and `sans-serif`
 
-</ul>
-</details>
-
-
-
-
-
-<p>
-
-</details>
-
-
-
-
-### Fonts & Text
-<details>
-<summary><b><u>Fonts and text:</u></b></summary>
-
-There is some steps that you gotta follow in order to adjust fonts in an html doc:
-
-<ol>
-    <li>First, find the <a href="https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/What_should_your_web_site_be_like#Font">output from Google Fonts</a> that you previously saved from What will your website look like?. Add the <code>&lt;link&gt;</code> element somewhere inside your index.html's head (anywhere between the <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> tags). It looks something like this:</li>
-
-```html
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-```
-This code links your page to a style sheet that loads the Open Sans font family with your webpage.    
-    <li>Add the following lines (shown below). The property <code>font-family</code> refers to the font(s) you want to use for text. This rule defines a global base font and font size for the whole page. Since <code>&lt;html&gt;</code> is the parent element of the whole page, all elements inside it inherit the same <code>font-size</code> and <code>font-family</code> by default.</li>
-
-```css
-html {
-  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
-  font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
-}
-```    
-> <strong>Note</strong>: Anything in CSS  between <code>/*</code> and <code>*/</code> is a <srong>CSS comment</code>. The browser ignores comments as it renders the code. CSS comments are a way for you to write helpful notes about your code or logic.
-
-<li>Now let's set font sizes for elements that will have text inside the HTML body (<code>&lt;h1&gt;</code>, <code>&lt;li<code>&gt;</code>, and &lt;p&gt;</code>). We'll also center the heading. Finally, let's expand the second ruleset (below) with settings for line height and letter spacing to make body content more readable.</li>
-
-```css
-h1 {
-  font-size: 60px;
-  text-align: center;
-}
-
-p, li {
-  font-size: 16px;    
-  line-height: 2;
-  letter-spacing: 1px;
-}
-```
-</ol>
-
-</details>
-
-<details>
-<summary><u><b>more about fonts:</b></u></summary>
-
-There are several default fonts that are available in all browsers. These generic font families include `monospace`, `serif` and `sans-serif`
-
-When one font isn't available, you can tell the browser to "degrade" to another font.
-
-For example, if you wanted an element to use the `Helvetica` font, but degrade to the `sans-serif` font when `Helvetica` isn't available, you will specify it as follows:
-
-```css
-
-p {
-  font-family: Helvetica, sans-serif;
-}
-```
+> **Note:** When one font isn't available, you can tell the browser to "degrade" to another font. For example, if you wanted an element to use the `Helvetica` font, but degrade to the `sans-serif` font when `Helvetica` isn't available, you will specify it as follows:
+> 
+>  ```css
+>
+>  p {
+>    font-family: Helvetica, sans-serif;
+>  }
+>  ```
 
 > **Note**: Generic font family names are not case-sensitive. Also, they do not need quotes because they are CSS keywords.
 
 > **Note**: If you have the font installed on your computer, you won't see the degradation because your browser is able to find the font.
 
-</details>
+<br>
+
+####  CSS Mini-refrence:
+
+1. **Basic properties**[[0]](#0 "ramoun")
+
+    *   **color**: 
+          `black` =  `#ffffff` = `rgb(r,g,b)`
+
+    *   **width:**
+          `10px` = `<percnetage>%`
+
+    * **border:**
+
+      - compound declaration :
+          + `border: 10px solid black`
+              
+      - sperate - propertise :
+          + `border-color: red;`
+          + `border-width: 10px;`
+          + `border-style: solid;` 
+          + `border-radius: 30px;`              
+    
+2. **Fonts & Text**
+    
+    *   **font-size**: `16px` = `1em` = '1rem;`
+    *   **font-family**: `"Fira Code", sans-serif;`
+        
+<br>
 
 ### CSS: all about boxes
 
@@ -388,6 +346,45 @@ body {
 - <strong>Presentation</strong>: How to control things like the color of text, the fonts you want to use and the size of those fonts, how to add background colors to pages (or parts of a page), and how to add background images.<span>[2]</span>
 
 - <strong>Layout</strong>: How to control <u>where</u> the different elements are positioned on the screen. There are several techniques that professionals use to make their pages more attractive.<span>[2]</span>
+</details>
+
+#### Real Life CSS
+
+There is some steps that you gotta follow in order to adjust fonts in an html doc:
+
+<ol>
+    <li>First, find the <a href="https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/What_should_your_web_site_be_like#Font">output from Google Fonts</a> that you previously saved from What will your website look like?. Add the <code>&lt;link&gt;</code> element somewhere inside your index.html's head (anywhere between the <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> tags). It looks something like this:</li>
+
+```html
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+```
+This code links your page to a style sheet that loads the Open Sans font family with your webpage.    
+    <li>Add the following lines (shown below). The property <code>font-family</code> refers to the font(s) you want to use for text. This rule defines a global base font and font size for the whole page. Since <code>&lt;html&gt;</code> is the parent element of the whole page, all elements inside it inherit the same <code>font-size</code> and <code>font-family</code> by default.</li>
+
+```css
+html {
+  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
+  font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
+}
+```    
+> <strong>Note</strong>: Anything in CSS  between <code>/*</code> and <code>*/</code> is a <srong>CSS comment</code>. The browser ignores comments as it renders the code. CSS comments are a way for you to write helpful notes about your code or logic.
+
+<li>Now let's set font sizes for elements that will have text inside the HTML body (<code>&lt;h1&gt;</code>, <code>&lt;li<code>&gt;</code>, and &lt;p&gt;</code>). We'll also center the heading. Finally, let's expand the second ruleset (below) with settings for line height and letter spacing to make body content more readable.</li>
+
+```css
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+p, li {
+  font-size: 16px;    
+  line-height: 2;
+  letter-spacing: 1px;
+}
+```
+</ol>
+
 </details>
 
 ### Test Yourself
