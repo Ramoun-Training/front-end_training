@@ -13,7 +13,7 @@ This is a training file/cheatsheet for **CSS** language (a styling language for 
 
 <br>
 
-<details><summary><h4> CSS has been adopted by all major browsers and allows you to control:[[1]](#1 "freecodecamp")</h4></summary>
+#### CSS has been adopted by all major browsers and allows you to control:[[1]](#1 "freecodecamp")
 
 - color
 - fonts
@@ -22,10 +22,9 @@ This is a training file/cheatsheet for **CSS** language (a styling language for 
 - sizing
 - decorations
 - transitions
-</details>
 
-<details>
-<summary>#### There are three main ways to apply CSS styling:[[1]](#1 "freecodecamp")
+
+#### There are three main ways to apply CSS styling:[[1]](#1 "freecodecamp")
 
 - You can apply <ins>**inline styles**</ins> directly to HTML elements with the `style` attribute. 
 - Alternatively, you can place CSS rules within <ins>**`style` tags**</ins> in an HTML document. 
@@ -46,15 +45,12 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
 ## Learn CSS
 
 # <img width="600px" src="https://mdn.mozillademos.org/files/9461/css-declaration-small.png">
-<!-- <hr> -->
-
-
 
 > **Note**: The whole structure is called a **ruleset**. (The term ruleset is often referred to as just rule.) 
 
 <br>
-<details>
-<summary>####  Anatomy & syntax of CSS:[[3]](#3 "MDN")
+
+####  Anatomy & syntax of CSS:[[3]](#3 "MDN")
 
 1. **basic anatomy**
 
@@ -134,8 +130,8 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
     > There are many more selectors to discover. To learn more, see the [MDN Selectors guide](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors).
 
 <br>
-<details>
-<summary>#### CSS declarations:
+
+#### CSS declarations:
 
 1. **Basic properties**[[1]](#1 "freecodecamp")
 
@@ -184,13 +180,8 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
 > **Note**: If you have the font installed on your computer, you won't see the degradation because your browser is able to find the font.
 
 <br>
-<details>
 
-
-
-
-
-<summary>####  CSS Mini-refrence:
+####  CSS Mini-refrence:
 
 1. **Basic properties**[[0]](#0 "ramoun")
 
