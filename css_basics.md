@@ -54,34 +54,28 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
 
 ####  Anatomy & syntax of CSS:[[3]](#3 "MDN")
 
-Note the names of the individual parts:
-</p>
-<ul>
-    <li><strong>Selector:</strong>
-    This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, <code>&lt;p&gt;</code> elements). To style a different element, change the selector.</li>
-    <li>
-    <strong>Declaration:</strong>
-    This is a single rule like <code>color: red;</code>. It specifies which of the element's properties you want to style.
-    </li>
-    <li><strong>Properties</strong>
-    These are ways in which you can style an HTML element. (In this example, color is a property of the <code>&lt;p&gt;</code> elements.) In CSS, you choose which properties you want to affect in the rule.</li>
-    <li><strong>Property value</strong>
-    To the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances for a given property. (For example, there are many <code>color</code> values in addition to <code>red</code>.)</li>
-</ul>
-<em>Note the other important parts of the syntax:</em>
-<ul>
-    <li>Apart from the selector, each ruleset must be wrapped in curly braces. (<code>{}</code>)</li>
-    <li>Within each declaration, you must use a colon (<code>:</code>) to separate the property from its value or values.</li>
-    <li>Within each ruleset, you must use a semicolon (<code>;</code>) to separate each declaration from the next one.</li>
-</ul>
+1. **basic anatomy**
 
-```css
-p {
-  color: red;
-  width: 500px;
-  border: 1px solid black;
-}
-```
+      Note the names of the individual parts:
+
+      *   **Selector:** This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, `<p>` elements). To style a different element, change the selector.
+      *   **Declaration:** This is a single rule like `color: red;`. It specifies which of the element's properties you want to style.
+      *   **Properties:** These are ways in which you can style an HTML element. (In this example, color is a property of the `<p>` elements.) In CSS, you choose which properties you want to affect in the rule.
+      *   **Property value** To the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances for a given property. (For example, there are many `color` values in addition to `red`.)
+
+      _Note the other important parts of the syntax:_
+
+      *   Apart from the selector, each ruleset must be wrapped in curly braces. (`{}`)
+      *   Within each declaration, you must use a colon (`:`) to separate the property from its value or values.
+      *   Within each ruleset, you must use a semicolon (`;`) to separate each declaration from the next one.
+
+      ```css
+      p {
+        color: red;
+        width: 500px;
+        border: 1px solid black;
+      }
+      ```
 
 <details>
 <summary><b><u>list of all properties:</u></b></summary>
