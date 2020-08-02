@@ -13,11 +13,7 @@ This is a training file/cheatsheet for **CSS** language (a styling language for 
 
 <br>
 
-<details>
-<summary><h4 style="display: inline;"> CSS has been adopted by all major browsers and allows you to control:</h4>
-<a href="#1" title="freecodecamp">[1]</a>
-</summary>
-
+#### CSS has been adopted by all major browsers and allows you to control:[[1]](#1 "freecodecamp")
 - color
 - fonts
 - positioning
@@ -25,48 +21,29 @@ This is a training file/cheatsheet for **CSS** language (a styling language for 
 - sizing
 - decorations
 - transitions
-</details>
 
-<br>
-
-<details>
-<summary><h4 style="display: inline;">There are three main ways to apply CSS styling:<a href="#1" title="freecodecamp">[1]</a></h4>
-</summary>
+#### There are three main ways to apply CSS styling:[[1]](#1 "freecodecamp")
 
 - You can apply <ins>**inline styles**</ins> directly to HTML elements with the `style` attribute. 
 - Alternatively, you can place CSS rules within <ins>**`style` tags**</ins> in an HTML document. 
 - Finally, you can write CSS rules in an <ins>**external style sheet**</ins>, then reference that file in the HTML document. 
  
 > **Note**: Even though the first two options have their use cases, most developers prefer external style sheets _because they keep the styles separate from the HTML elements. **This improves the readability and reusability of your code**_.
-<<<<<<< HEAD
-<details>
-<summary>#### How CSS works:[[1]](#1 "freecodecamp")
-=======
-<<<<<<< HEAD
-</details>
 
-<br>
-
-<details>
-<summary><h4 style="display: inline;"> How CSS works:<a href="#1" title="freecodecamp">[1]</a></h4></summary>
-=======
-<details>
-<summary>#### How CSS works:[[1]](#1 "freecodecamp")
->>>>>>> parent of 316fc1f... edited the css_basics.md
->>>>>>> 4367a57d97a0ac52a7713626bc7e60645df73bd3
+#### How CSS works:[[1]](#1 "freecodecamp")
 
 The idea behind CSS is that you can use a `selector` to target an HTML element in the **DOM (Document Object Model)** and then apply a variety of attributes (`properties`) to that element to change the way it is displayed on the page.
 
     you'll see how adding CSS styles to the elements of your a Web App can change it from simple text to something more.
     
 > **Note**: it is a good practice to end inline style declarations with a `;` .
-</details>
     
 <br><br>
 
 ## Learn CSS
 
 # <img width="600px" src="https://mdn.mozillademos.org/files/9461/css-declaration-small.png">
+
 
 > **Note**: The whole structure is called a **ruleset**. (The term ruleset is often referred to as just rule.) 
 
@@ -186,20 +163,62 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
         
         > **Note**: Family names are `case-sensitive` and need to be wrapped in quotes if there is a space in the name. For example, you need quotes to use the `"Open Sans"` font, but not to use the `Lobster` font.
 
-> **Note:** There are several default fonts that are available in all browsers. These generic font families include `monospace`, `serif` and `sans-serif`
+      > **Note:** There are several default fonts that are available in all browsers. These generic font families include `monospace`, `serif` and `sans-serif`
 
-> **Note:** When one font isn't available, you can tell the browser to "degrade" to another font. For example, if you wanted an element to use the `Helvetica` font, but degrade to the `sans-serif` font when `Helvetica` isn't available, you will specify it as follows:
-> 
->  ```css
->
->  p {
->    font-family: Helvetica, sans-serif;
->  }
->  ```
+      > **Note:** When one font isn't available, you can tell the browser to "degrade" to another font. For example, if you wanted an element to use the `Helvetica` font, but degrade to the `sans-serif` font when `Helvetica` isn't available, you will specify it as follows:
+      > 
+      >  ```css
+      >
+      >  p {
+      >    font-family: Helvetica, sans-serif;
+      >  }
+      >  ```
 
-> **Note**: Generic font family names are not case-sensitive. Also, they do not need quotes because they are CSS keywords.
+      > **Note**: Generic font family names are not case-sensitive. Also, they do not need quotes because they are CSS keywords.
 
-> **Note**: If you have the font installed on your computer, you won't see the degradation because your browser is able to find the font.
+      > **Note**: If you have the font installed on your computer, you won't see the degradation because your browser is able to find the font.
+
+3. **CSS boxes**
+
+    You may have already noticed this, but all HTML elements are essentially little rectangles.[1]
+
+    Three important properties control the space that surrounds each HTML element: `padding`, `margin`, and `border`.[1]
+
+    <b><u>Boxes in CSS:</u></b>
+    Something you'll notice about writing CSS: a lot of it is about boxes. This includes setting size, color, and position. Most HTML elements on your page can be thought of as boxes sitting on top of other boxes.
+
+    CSS layout is mostly based on the box model. Each box taking up space on your page has properties like:
+
+- `padding`, the space around the content. In the example below, it is the space around the paragraph text.[3]
+
+- controls the amount of space between the element's content and its `border`.[1]
+
+- `border`, the solid line that is just outside the padding.
+
+- `margin`, the space around the outside of the border.[3]
+
+- controls the amount of space between an element's `border` and surrounding elements.[1]
+
+  > **Note**: If you set an element's margin to a negative value, the element will grow larger.[1]
+
+    <img src="https://mdn.mozillademos.org/files/9443/box-model.png">
+
+In this section we also use:
+*   `width` (of an element).
+*   `background-color`, the color behind an element's content and padding.
+*   `color`, the color of an element's content (usually text).
+*   `text-shadow` sets a drop shadow on the text inside an element.
+*   `display` sets the display mode of an element. (keep reading to learn more)
+
+
+4. <b><u>CSS properties generally fall into one of two categories:</u></b></summary>
+
+- <strong>Presentation</strong>: How to control things like the color of text, the fonts you want to use and the size of those fonts, how to add background colors to pages (or parts of a page), and how to add background images.<span>[2]</span>
+
+- <strong>Layout</strong>: How to control <u>where</u> the different elements are positioned on the screen. There are several techniques that professionals use to make their pages more attractive.<span>[2]</span>
+</details>
+
+
 
 <br>
 
@@ -224,53 +243,53 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
           + `border-style: solid;` 
           + `border-radius: 30px;`              
     
-2. **Fonts & Text**
+2. **Fonts & Text**[[0]](#0 "ramoun")
     
     *   **font-size**: `16px` = `1em` = '1rem;`
     *   **font-family**: `"Fira Code", sans-serif;`
         
 <br>
 
-### CSS: all about boxes
+#### Real Life CSS
 
-You may have already noticed this, but all HTML elements are essentially little rectangles.[1]
+There is some steps that you gotta follow in order to adjust fonts in an html doc:
 
-Three important properties control the space that surrounds each HTML element: `padding`    , `margin`, and `border`.[1]
+<ol>
+    <li>First, find the <a href="https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/What_should_your_web_site_be_like#Font">output from Google Fonts</a> that you previously saved from What will your website look like?. Add the <code>&lt;link&gt;</code> element somewhere inside your index.html's head (anywhere between the <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> tags). It looks something like this:</li>
 
-<details>
-<summary><b><u>Boxes in CSS:</u></b></summary>
-Something you'll notice about writing CSS: a lot of it is about boxes. This includes setting size, color, and position. Most HTML elements on your page can be thought of as boxes sitting on top of other boxes.
+```html
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+```
+This code links your page to a style sheet that loads the Open Sans font family with your webpage.    
+    <li>Add the following lines (shown below). The property <code>font-family</code> refers to the font(s) you want to use for text. This rule defines a global base font and font size for the whole page. Since <code>&lt;html&gt;</code> is the parent element of the whole page, all elements inside it inherit the same <code>font-size</code> and <code>font-family</code> by default.</li>
 
-CSS layout is mostly based on the box model. Each box taking up space on your page has properties like:
-<ul>
-<li><code>padding</code>, the space around the content. In the example below, it is the space around the paragraph text.[]
+```css
+html {
+  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
+  font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
+}
+```    
+> <strong>Note</strong>: Anything in CSS  between <code>/*</code> and <code>*/</code> is a <srong>CSS comment</code>. The browser ignores comments as it renders the code. CSS comments are a way for you to write helpful notes about your code or logic.
 
-controls the amount of space between the element's content and its `border`.[1]
-</li>
-<li><code>border</code>, the solid line that is just outside the padding.</li>
-<li><code>margin</code>, the space around the outside of the border.[]
+<li>Now let's set font sizes for elements that will have text inside the HTML body (<code>&lt;h1&gt;</code>, <code>&lt;li<code>&gt;</code>, and &lt;p&gt;</code>). We'll also center the heading. Finally, let's expand the second ruleset (below) with settings for line height and letter spacing to make body content more readable.</li>
 
-controls the amount of space between an element's `border` and surrounding elements.[1]
+```css
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
 
-> **Note**: If you set an element's margin to a negative value, the element will grow larger.[1]
+p, li {
+  font-size: 16px;    
+  line-height: 2;
+  letter-spacing: 1px;
+}
+```
+</ol>
 
-</li>
-</ul>
-
-<img src="https://mdn.mozillademos.org/files/9443/box-model.png">
-
-In this section we also use:
-<ul>
-<li><code>width</code> (of an element).</li>
-<li><code>background-color</code>, the color behind an element's content and padding.</li>
-<li><code>color</code>, the color of an element's content (usually text).</li>
-<li><code>text-shadow</code> sets a drop shadow on the text inside an element.</li>
-<li><code>display</code> sets the display mode of an element. (keep reading to learn more)</li>
-</ul>
 </details>
 
-<details>
-<summary><b><u>Styling the body:</u></b></summary>
+<b><u>Styling the body:</u></b>
 
 ```css
 body {
@@ -360,52 +379,7 @@ body {
 ```
 </details>
 
-<details>
-<summary><b><u>CSS properties generally fall into one of two categories:</u></b></summary>
 
-- <strong>Presentation</strong>: How to control things like the color of text, the fonts you want to use and the size of those fonts, how to add background colors to pages (or parts of a page), and how to add background images.<span>[2]</span>
-
-- <strong>Layout</strong>: How to control <u>where</u> the different elements are positioned on the screen. There are several techniques that professionals use to make their pages more attractive.<span>[2]</span>
-</details>
-
-#### Real Life CSS
-
-There is some steps that you gotta follow in order to adjust fonts in an html doc:
-
-<ol>
-    <li>First, find the <a href="https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/What_should_your_web_site_be_like#Font">output from Google Fonts</a> that you previously saved from What will your website look like?. Add the <code>&lt;link&gt;</code> element somewhere inside your index.html's head (anywhere between the <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> tags). It looks something like this:</li>
-
-```html
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-```
-This code links your page to a style sheet that loads the Open Sans font family with your webpage.    
-    <li>Add the following lines (shown below). The property <code>font-family</code> refers to the font(s) you want to use for text. This rule defines a global base font and font size for the whole page. Since <code>&lt;html&gt;</code> is the parent element of the whole page, all elements inside it inherit the same <code>font-size</code> and <code>font-family</code> by default.</li>
-
-```css
-html {
-  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
-  font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
-}
-```    
-> <strong>Note</strong>: Anything in CSS  between <code>/*</code> and <code>*/</code> is a <srong>CSS comment</code>. The browser ignores comments as it renders the code. CSS comments are a way for you to write helpful notes about your code or logic.
-
-<li>Now let's set font sizes for elements that will have text inside the HTML body (<code>&lt;h1&gt;</code>, <code>&lt;li<code>&gt;</code>, and &lt;p&gt;</code>). We'll also center the heading. Finally, let's expand the second ruleset (below) with settings for line height and letter spacing to make body content more readable.</li>
-
-```css
-h1 {
-  font-size: 60px;
-  text-align: center;
-}
-
-p, li {
-  font-size: 16px;    
-  line-height: 2;
-  letter-spacing: 1px;
-}
-```
-</ol>
-
-</details>
 
 ### Test Yourself
 
