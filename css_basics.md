@@ -89,48 +89,49 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
 
       here are many different types of selectors. The examples above use element selectors, **which select all elements of a given type**. But we can make more specific selections as well. Here are some of the more common types of selectors:
 
-<table style="width:100%" border="2">
-  <tr>
-    <th>Selector name</th>
-    <th>What does it select	</th>
-    <th>Example</th>
-  </tr>
-  <tr>
-    <td>Element selector (sometimes called a tag or type selector)</td>
-    <td>All HTML elements of the specified type.</td>
-    <td><code>p</code><br>
-    selects <code>&lt;p&gt;</code></td>
-  </tr>
-  <tr>
-    <td>ID selector</td>
-    <td>The element on the page with the specified ID. On a given HTML page, each id value <strike>must</strike> <mark>should</mark> be unique.</td>
-    <td><code>#my-id</code><br>
-    selects <code>&lt;p id="my-id"&gt;</code> or <code>&lt;a id="my-id"&gt;</code></td>
-  </tr>
-  <tr>
-    <td>Class selector</td>
-    <td>The element(s) on the page with the specified class. Multiple instances of the same class can appear on a page.</td>
-    <td><code>.my-class</code><br>
-selects <code>&lt;p class="my-class"&gt;</code> and <code>&lt;a class="my-class"&gt;</code>
-</td>
-  </tr>
-  <tr>
-    <td>Attribute selector</td>
-    <td>The element(s) on the page with the specified attribute.</td>
-    <td><code>img[src]</code><br>
-selects <code>&lt;img src="myimage.png"&gt;</code> but not <code>&lt;img&gt;</code</td>
-  </tr>
-  <tr>
-    <td>Pseudo-class selector</td>
-    <td>The specified element(s), but only when in the specified state. (For example, when a cursor hovers over a link.)</td>
-    <td><code>a:hover</code><br>
-selects <code>&lt;a&gt;</code>, but only when the mouse pointer is hovering over the link.</td>
-  </tr>
-</table>
+    <table style="width:100%" border="2">
+      <tr>
+        <th>Selector name</th>
+        <th>What does it select	</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td>Element selector (sometimes called a tag or type selector)</td>
+        <td>All HTML elements of the specified type.</td>
+        <td><code>p</code><br>
+        selects <code>&lt;p&gt;</code></td>
+      </tr>
+      <tr>
+        <td>ID selector</td>
+        <td>The element on the page with the specified ID. On a given HTML page, each id value <strike>must</strike> <mark>should</mark> be unique.</td>
+        <td><code>#my-id</code><br>
+        selects <code>&lt;p id="my-id"&gt;</code> or <code>&lt;a id="my-id"&gt;</code></td>
+      </tr>
+      <tr>
+        <td>Class selector</td>
+        <td>The element(s) on the page with the specified class. Multiple instances of the same class can appear on a page.</td>
+        <td><code>.my-class</code><br>
+    selects <code>&lt;p class="my-class"&gt;</code> and <code>&lt;a class="my-class"&gt;</code>
+    </td>
+      </tr>
+      <tr>
+        <td>Attribute selector</td>
+        <td>The element(s) on the page with the specified attribute.</td>
+        <td><code>img[src]</code><br>
+    selects <code>&lt;img src="myimage.png"&gt;</code> but not <code>&lt;img&gt;</code</td>
+      </tr>
+      <tr>
+        <td>Pseudo-class selector</td>
+        <td>The specified element(s), but only when in the specified state. (For example, when a cursor hovers over a link.)</td>
+        <td><code>a:hover</code><br>
+    selects <code>&lt;a&gt;</code>, but only when the mouse pointer is hovering over the link.</td>
+      </tr>
+    </table>
 
-> [!TIP]
-> There are many more selectors to discover. To learn more, see the [MDN Selectors guide](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors).
+    > [!TIP]
+    > There are many more selectors to discover. To learn more, see the [MDN Selectors guide](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors).
 
+####  CSS Mini-refrence:[[3]](#3 "MDN")
 
 
 <details>
