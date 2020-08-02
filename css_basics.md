@@ -117,18 +117,18 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
         <td>The element(s) on the page with the specified attribute.</td>
         <td><code>img[src]</code><br>
     selects <code>&lt;img src="myimage.png"&gt;</code> but not <code>&lt;img&gt;</code>
->**Note:** you can choose elements based on attribute only without the need to mention the element name (i.e: [src="bg.png"]{/*declaration*/}[[1]](#1 "freecodecamp")</td>
-      </tr>      
-      <tr>
-        <td>Pseudo-class selector</td>
-        <td>The specified element(s), but only when in the specified state. (For example, when a cursor hovers over a link.)</td>
-        <td><code>a:hover</code><br>
-    selects <code>&lt;a&gt;</code>, but only when the mouse pointer is hovering over the link.</td>
-      </tr>
-    </table>
+>**Note:** you can choose elements based on attribute only without the need to mention the element name (i.e: [src="bg.png"]{/*declaration*/}</td>
+    </tr>      
+    <tr>
+      <td>Pseudo-class selector</td>
+      <td>The specified element(s), but only when in the specified state. (For example, when a cursor hovers over a link.)</td>
+      <td><code>a:hover</code><br>
+  selects <code>&lt;a&gt;</code>, but only when the mouse pointer is hovering over the link.</td>
+    </tr>
+  </table>
 
-    > [!TIP]
-    > There are many more selectors to discover. To learn more, see the [MDN Selectors guide](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors).
+  > [!TIP]
+  > There are many more selectors to discover. To learn more, see the [MDN Selectors guide](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors).
 
 <br>
 
@@ -182,30 +182,30 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
 
 3. **CSS boxes**
  
-    side-specific margin instructions.
+    - side-specific margin instructions.
 
-    You may have already noticed this, but all HTML elements are essentially little rectangles.[1]
+    - You may have already noticed this, but all HTML elements are essentially little rectangles.[1]
 
-    Three important properties control the space that surrounds each HTML element: `padding`, `margin`, and `border`.[1]
+    - Three important properties control the space that surrounds each HTML element: `padding`, `margin`, and `border`.[1]
 
-    <b><u>Boxes in CSS:</u></b>
+    - <b><u>Boxes in CSS:</u></b>
     Something you'll notice about writing CSS: a lot of it is about boxes. This includes setting size, color, and position. Most HTML elements on your page can be thought of as boxes sitting on top of other boxes.
 
-    CSS layout is mostly based on the box model. Each box taking up space on your page has properties like:
+    - CSS layout is mostly based on the box model. Each box taking up space on your page has properties like:
 
-- `padding`, the space around the content. In the example below, it is the space around the paragraph text.[3]
+      + `padding`, the space around the content. In the example below, it is the space around the paragraph text.[3]
 
-- controls the amount of space between the element's content and its `border`.[1]
+      + controls the amount of space between the element's content and its `border`.[1]
 
-- `border`, the solid line that is just outside the padding.
+      + `border`, the solid line that is just outside the padding.
 
-- `margin`, the space around the outside of the border.[3]
+      + `margin`, the space around the outside of the border.[3]
 
-- controls the amount of space between an element's `border` and surrounding elements.[1]
+      + controls the amount of space between an element's `border` and surrounding elements.[1]
 
   > **Note**: If you set an element's margin to a negative value, the element will grow larger.[1]
 
-    <img src="https://mdn.mozillademos.org/files/9443/box-model.png">
+<img src="https://mdn.mozillademos.org/files/9443/box-model.png">
 
 In this section we also use:
 *   `width` (of an element).
