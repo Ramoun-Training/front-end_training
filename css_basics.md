@@ -78,12 +78,12 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
       ```
 
 
-  >**Note:** You can also select multiple elements and apply a single ruleset to all of them. Separate multiple selectors by commas. For example:
-  > ```css
-  > p, li, h1 {
-  >     color: red;
-  >}
-  > ```
+    >**Note:** You can also select multiple elements and apply a single ruleset to all of them. Separate multiple selectors by commas. For example:
+    > ```css
+    > p, li, h1 {
+    >     color: red;
+    >}
+    > ```
 
 
 <details>
