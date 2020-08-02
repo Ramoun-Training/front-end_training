@@ -13,7 +13,10 @@ This is a training file/cheatsheet for **CSS** language (a styling language for 
 
 <br>
 
-#### CSS has been adopted by all major browsers and allows you to control:[[1]](#1 "freecodecamp")
+<details>
+<summary><h4 style="display: inline;"> CSS has been adopted by all major browsers and allows you to control:</h4>
+<a href="#1" title="freecodecamp">[1]</a>
+</summary>
 
 - color
 - fonts
@@ -22,23 +25,32 @@ This is a training file/cheatsheet for **CSS** language (a styling language for 
 - sizing
 - decorations
 - transitions
+</details>
 
+<br>
 
-#### There are three main ways to apply CSS styling:[[1]](#1 "freecodecamp")
+<details>
+<summary><h4 style="display: inline;">There are three main ways to apply CSS styling:<a href="#1" title="freecodecamp">[1]</a></h4>
+</summary>
 
 - You can apply <ins>**inline styles**</ins> directly to HTML elements with the `style` attribute. 
 - Alternatively, you can place CSS rules within <ins>**`style` tags**</ins> in an HTML document. 
 - Finally, you can write CSS rules in an <ins>**external style sheet**</ins>, then reference that file in the HTML document. 
  
 > **Note**: Even though the first two options have their use cases, most developers prefer external style sheets _because they keep the styles separate from the HTML elements. **This improves the readability and reusability of your code**_.
+</details>
 
-#### How CSS works:[[1]](#1 "freecodecamp")
+<br>
+
+<details>
+<summary><h4 style="display: inline;"> How CSS works:<a href="#1" title="freecodecamp">[1]</a></h4></summary>
 
 The idea behind CSS is that you can use a `selector` to target an HTML element in the **DOM (Document Object Model)** and then apply a variety of attributes (`properties`) to that element to change the way it is displayed on the page.
 
     you'll see how adding CSS styles to the elements of your a Web App can change it from simple text to something more.
     
 > **Note**: it is a good practice to end inline style declarations with a `;` .
+</details>
     
 <br><br>
 
