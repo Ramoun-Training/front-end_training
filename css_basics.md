@@ -13,7 +13,8 @@ This is a training file/cheatsheet for **CSS** language (a styling language for 
 
 <br>
 
-#### CSS has been adopted by all major browsers and allows you to control:[[1]](#1 "freecodecamp")
+<details><summary><h4> CSS has been adopted by all major browsers and allows you to control:[[1]](#1 "freecodecamp")</h4></summary>
+
 - color
 - fonts
 - positioning
@@ -21,17 +22,18 @@ This is a training file/cheatsheet for **CSS** language (a styling language for 
 - sizing
 - decorations
 - transitions
+</details>
 
-
-#### There are three main ways to apply CSS styling:[[1]](#1 "freecodecamp")
+<details>
+<summary>#### There are three main ways to apply CSS styling:[[1]](#1 "freecodecamp")
 
 - You can apply <ins>**inline styles**</ins> directly to HTML elements with the `style` attribute. 
 - Alternatively, you can place CSS rules within <ins>**`style` tags**</ins> in an HTML document. 
 - Finally, you can write CSS rules in an <ins>**external style sheet**</ins>, then reference that file in the HTML document. 
  
 > **Note**: Even though the first two options have their use cases, most developers prefer external style sheets _because they keep the styles separate from the HTML elements. **This improves the readability and reusability of your code**_.
-
-#### How CSS works:[[1]](#1 "freecodecamp")
+<details>
+<summary>#### How CSS works:[[1]](#1 "freecodecamp")
 
 The idea behind CSS is that you can use a `selector` to target an HTML element in the **DOM (Document Object Model)** and then apply a variety of attributes (`properties`) to that element to change the way it is displayed on the page.
 
@@ -51,8 +53,8 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
 > **Note**: The whole structure is called a **ruleset**. (The term ruleset is often referred to as just rule.) 
 
 <br>
-
-####  Anatomy & syntax of CSS:[[3]](#3 "MDN")
+<details>
+<summary>####  Anatomy & syntax of CSS:[[3]](#3 "MDN")
 
 1. **basic anatomy**
 
@@ -132,8 +134,8 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
     > There are many more selectors to discover. To learn more, see the [MDN Selectors guide](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors).
 
 <br>
-
-#### CSS declarations:
+<details>
+<summary>#### CSS declarations:
 
 1. **Basic properties**[[1]](#1 "freecodecamp")
 
@@ -182,8 +184,13 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
 > **Note**: If you have the font installed on your computer, you won't see the degradation because your browser is able to find the font.
 
 <br>
+<details>
 
-####  CSS Mini-refrence:
+
+
+
+
+<summary>####  CSS Mini-refrence:
 
 1. **Basic properties**[[0]](#0 "ramoun")
 
