@@ -51,6 +51,7 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
 
 ####  Anatomy & syntax of CSS:[[3]](#3 "MDN")
 
+
 1. **basic anatomy**
 
       Note the names of the individual parts:
@@ -115,8 +116,9 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
         <td>Attribute selector</td>
         <td>The element(s) on the page with the specified attribute.</td>
         <td><code>img[src]</code><br>
-    selects <code>&lt;img src="myimage.png"&gt;</code> but not <code>&lt;img&gt;</code</td>
-      </tr>
+    selects <code>&lt;img src="myimage.png"&gt;</code> but not <code>&lt;img&gt;</code>
+>**Note:** you can choose elements based on attribute only without the need to mention the element name (i.e: [src="bg.png"]{/*declaration*/}[[1]](#1 "freecodecamp")</td>
+      </tr>      
       <tr>
         <td>Pseudo-class selector</td>
         <td>The specified element(s), but only when in the specified state. (For example, when a cursor hovers over a link.)</td>
@@ -179,6 +181,8 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
       > **Note**: If you have the font installed on your computer, you won't see the degradation because your browser is able to find the font.
 
 3. **CSS boxes**
+ 
+    side-specific margin instructions.
 
     You may have already noticed this, but all HTML elements are essentially little rectangles.[1]
 
