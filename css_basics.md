@@ -132,7 +132,7 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
 
 <br>
 
-#### CSS declarations:
+#### CSS - in depth:
 
 1. **Basic properties**[[1]](#1 "freecodecamp")
 
@@ -180,31 +180,81 @@ The idea behind CSS is that you can use a `selector` to target an HTML element i
 
       > **Note**: If you have the font installed on your computer, you won't see the degradation because your browser is able to find the font.
 
-3. **CSS boxes**
+3. **CSS box model**
  
-    - side-specific margin instructions.
-
-    - You may have already noticed this, but all HTML elements are essentially little rectangles.[1]
-
-    - Three important properties control the space that surrounds each HTML element: `padding`, `margin`, and `border`.[1]
-
     - <b><u>Boxes in CSS:</u></b>
-    Something you'll notice about writing CSS: a lot of it is about boxes. This includes setting size, color, and position. Most HTML elements on your page can be thought of as boxes sitting on top of other boxes.
+    Something you'll notice about writing CSS: a lot of it is about boxes. This includes setting size, color, and position. Most HTML elements on your page can be thought of as boxes sitting on top of (contained) other boxes.[1][4]    
+
+    - Theses Boxes consist of differnet parts:     
+        1. Actual **content** of the box (text ...et). 
+        2. **padding** of the box
+        3. **border** of the box.
+        4. **margin** of the box.
+    
+    - These four different parts interact with each other to form the **box-model**.[4]
+
+    - Three important properties control the space that surrounds each HTML element: `padding`, `margin`, and `border`.[1]    
+
 
     - CSS layout is mostly based on the box model. Each box taking up space on your page has properties like:
+    
+      + **content:**  
+            if you do nothing to a box at all, the content of the box is going to fill up the whole box & the box will be no larger than the content.[4]
 
-      + `padding`, the space around the content. In the example below, it is the space around the paragraph text.[3]
+      + **padding:**  
+            the space around the content. In the example below, it is the space around the paragraph text (content).[3] `padding` can expand the size of the box and make it bigger.[4]
 
-      + controls the amount of space between the element's content and its `border`.[1]
+              > **Note**: when you add padding to an element, you 'll find that everything is pushed away from the content by the amount specified.[4]
 
-      + `border`, the solid line that is just outside the padding.
+              > **Note**: padding includes the `background` of an element. That's why most buttons in css are styled using padding so that the background of the button becomes wider than the actual text of the button.[4]
 
-      + `margin`, the space around the outside of the border.[3]
+          + controls the amount of space between the element's content and its `border`.[1]
 
-      + controls the amount of space between an element's `border` and surrounding elements.[1]
+          + `padding` is mostly used to add background to an element.
 
-  > **Note**: If you set an element's margin to a negative value, the element will grow larger.[1]
+      + **border:**  
+            the solid line that is just outside the padding. The width of the border is added on top of the padding.[0][3][4]
 
+      + **margin:**  
+            the space around the outside of the border.[0][3][4]          
+
+          - Margin is usually used to space 2 elements part from each other.[4]
+
+          > **Note:** `margin` controls the amount of space between an element's `border` and surrounding elements.[1]
+
+          > **Note**: If you set an element's margin to a negative value, the element will grow larger.[1]
+
+          > **Note**: in **box-model** `margins` actually collapses between 2 elements that are next to each other. **_so, if 2 elements are next to each other and they both share a margin, whichever margin is the largest is the one that will be used._** (the other margin will be there but it won't affect the spacing).[4]
+
+      + **size:**     
+            You can control the size of the `content` itself using the: `height` & `width` properties.[4]
+
+          > **Note**: by default, in the **box-model** to get the width/heigth (of an element), you add the width/height (of the content) to the `padding` on both sides plus the `border` on both sides.[4]
+
+          > **Note**: `margin` doesn't account into the size of an element for sizing using **CSS** by default.[4]
+
+          To make the `height` and `width` (of content) be the actual `height` and `width` of the whole element, change the `box-sizing` property to `border-box`.[4]
+
+          > **Note**: what `border-box` property value does is it makes the `height` and `width` properties account for the `padding` and the `border` of an element. It subtracts out the values of `width` and `height` from the `border` & `padding` and assigns the result value to the content `width` and `height`. So instead of adding `border` and `padding` values it just uses the `height` and `width` values & the `border` and `padding` just cut into that `width` & `height`. So the `border` will be there and the `padding` wil be there but the actual content size will shrink down. [4]
+
+          > **Note**: when it comes to learning the `box-model`, the easiest way to do it is to use _chrome-dev-tool_ & you can see each of the different sections of different elements (content, border, margin ...etc).[4] 
+
+      > **Note:** The space in (`margin`, `padding`, `border`) is added from **top to bottom** & **left to right**[0]
+
+      > **Final Notes:**  
+      > 1. `If you wanna space 2 elements away from each other` -> <mark>use **margin** (and that is the best way to do it in **CSS**)</mark>.[4]
+      >
+      > 2. `If you wanna space out an element from itself` -> <mark>use **padding** because it is inside the border which will include the background color and margin is outside the border</mark>.[4]
+      >
+      > 3. `box-sizing prperty is almost always used in **CSS** because it makes styling things so much easier` -> <mark> many times it gets added to the universal selector (*), so that every element will use border-box because it is so much easier when whenever you write the height and width is the actual height and width of the element and you don't have to worry about doing math in your head when you make theses values</mark> 
+
+
+    - There are 2 ways to spcecify values for css boxes attributes: 
+        1. **side-specific** instructions.
+        2. **one line** instructions.
+   
+
+<br>
 <img src="https://mdn.mozillademos.org/files/9443/box-model.png">
 
 In this section we also use:
@@ -215,13 +265,34 @@ In this section we also use:
 *   `display` sets the display mode of an element. (keep reading to learn more)
 
 
-4. <b><u>CSS properties generally fall into one of two categories:</u></b></summary>
+        4. <b><u>CSS properties generally fall into one of two categories:</u></b></summary>
+        
+        - <strong>Presentation</strong>: How to control things like the color of text, the fonts you want to use and the size of those fonts, how to add background colors to pages (or parts of a page), and how to add background images.<span>[2]</span>
+        
+        - <strong>Layout</strong>: How to control <u>where</u> the different elements are positioned on the screen. There are several techniques that professionals use to make their pages more attractive.<span>[2]</span>
 
-- <strong>Presentation</strong>: How to control things like the color of text, the fonts you want to use and the size of those fonts, how to add background colors to pages (or parts of a page), and how to add background images.<span>[2]</span>
+4. **Length Units in CSS**
+    
+      - A **length** unit, which is what tells the browser how to _size_ or _space_ an item.[1]        
 
-- <strong>Layout</strong>: How to control <u>where</u> the different elements are positioned on the screen. There are several techniques that professionals use to make their pages more attractive.<span>[2]</span>
-</details>
+      - There are 15 **CSS** length units that are currenty supproted by browsers.[5]
 
+      - The two main categories of these units are:[1][5]
+          + **Absolute:**  
+                 Their measurements are absolute (they are not based on anything else - they always gonna be the same)[6]:
+              
+              1. pixel: is always gonna be the same no-matter what
+          + **Relative:**  
+                 They get their measurement based on something else:
+
+              1. The Parent's dimensions (`%`).[5]
+               
+              1. The Currently decalred `font`-attributes (`em`, `rem`, `ex`, `ch`).[5]
+              1. The viewport dimentions (`vw`, `vh`, `vmin`, `vmax`).[5]
+              
+
+      - Pixels are a type of **length** unit. In addition to px, CSS has a number of different length unit options that you can use.[1]
+    
 
 
 <br>
@@ -412,7 +483,8 @@ body {
 
 - <span id="3">[3]</span> [MDN Refrences](https://developer.mozilla.org/en-US/docs/web "website").
 
-<!-- 
+- <span id="4">[4]</span> [Web Dev Simplified](https://www.youtube.com/watch?v=rIO5326FgPE "video - Learn CSS Box Model In 8 Minutes").
 
-[3] Web Dev Simplified, Youtube Channel, https://www.youtube.com/watch?v=fNcJuPIZ2WE&t=52s
--->
+- <span id="5">[5]</span> [DevTips](https://www.youtube.com/watch?v=qrduUUdxBSY "video - CSS Units (CSS Lengths: rems, ems, pixels, percents, and more)").
+
+https://www.youtube.com/watch?v=-GR52czEd-0
