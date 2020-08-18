@@ -36,11 +36,12 @@ nav {
 
 .menu-box {
     width: 100px;
-    height: 100px;
+    height: 90px;
     padding: 20px;
     float: right;
     font-family: Helvetica;
     margin-bottom: 50px;
+    text-align: justify;
 }
 
 .menu-box:nth-child(odd) {
@@ -51,11 +52,11 @@ nav {
 .menu-box h3 {
     text-transform: capitalize;
     margin-bottom: 5px;
-    color: darkcyan;    
+    color: rgb(64, 143, 233);    
 }
 
 .menu-box p {
-    text-align: start;
+    /* text-align: start; */
 }
 
 .clear-fix {
@@ -65,7 +66,6 @@ nav {
 .menu-box:hover {
     cursor: pointer;
     background: linear-gradient(to bottom, rgba(170, 170, 170, 0.219), transparent);
-    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .menu-box:hover h3 {
@@ -76,15 +76,44 @@ nav {
     color: black;
 }
 
+#email {
+    text-align: right;
+    width: 180px;
+    visibility: hidden;
+}
+
+#email:hover {
+    background: none;
+    cursor: default;
+}
+
+#email:active h3 {
+    color: rgb(64, 143, 233);
+}
+
+#email h3 {
+    text-decoration: underline;
+}
+
+#email a {
+    font-weight: 600;
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+#email a:hover {
+    color: rgb(64, 143, 233);
+}
+
 h1 {
-    margin-top: 40px;
-    font-size: 25px;
-    width: 320px;
+    margin-top: 10px;
+    font-size: 30px;
+    width: 240px;
 }
 
 header h4 {
-    font-size: 14px;
-    width: 317px;
+    font-size: 16px;
+    width: 238px;
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(64, 143, 233);
     color: white;
@@ -92,8 +121,8 @@ header h4 {
 }
 
 header {
-    padding-top: 10px;
-    margin-bottom: 30px;
+    padding-top: 2px;
+    margin-bottom: 20px;
 }
 
 .sticky {
@@ -109,15 +138,28 @@ header {
     height: 2px;
 }
 
-
-
 article {
     margin-top: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    width: 900px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 article h2 {
-    font-size: 60px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+article h4 {
+    color: white;
+    background-color: rgb(64, 143, 233);
+    margin-right: 770px;
+    font-size: 20px;
+    padding-left: 10px;
+    height: 30px;
+    padding-top: 30px;
 }
 
 article .sub-head {
@@ -139,14 +181,17 @@ article p {
     width: 200px;
     margin-top: 20px;
     margin-right: 20px;
-    text-align: left;
+    text-align: justify;
 }
 
 #stack-list {
     font-family: helvetica;
-    border: solid rgba(29, 29, 29, 1.2) 2px;
-    margin-top: 50px;
+    border: solid rgba(29, 29, 29, 0.5) 2px;
+    margin-top: -200px;
     padding: 20px;
+    width: 600px;
+    height: 400px;
+    overflow: scroll;
 }
 
 #stack-list #head {
@@ -197,7 +242,7 @@ footer {
     width: 100%;
     box-shadow: 0px -3px 0px rgba(29, 29, 29, 0.2);
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 10px;    
 }
 
 button {
@@ -209,3 +254,60 @@ button {
     cursor: pointer;    
     outline: 0px;
 }
+
+/* blinking cursor */
+.blinking-cursor {
+    font-weight: 900;
+    font-size: 18px;
+    color: white;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+  
+  @-webkit-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+  
+  @-ms-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+  
+  @-o-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
