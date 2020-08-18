@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pixels</title>
+    <style>
+        .box {
+            background-color: yellowgreen;
+            box-sizing: border-box;
+            /* height: 70px; */
+            border: 5px solid black;
+            color: white;
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 50px;
+
+            margin: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .px {
+            color: yellow;
+            text-transform: uppercase;
+        }
+
+        .parent {
+            background-color: tomato;
+        }
+
+        .parent .box {
+            background-color: teal;
+        }
+
+        .fifty-pixels {
+            width: 50px;
+            line-break: auto;
+        }
+
+        .hundred-pixels {
+            width: 100px;
+        }
+
+        .four-hundred-pixels {
+            width: 400px;
+        }
+
+        .minus-hundred-pixels {
+            /* invalid property value */
+            width: -100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box fifty-pixels">50 <span class="px">px</span></div>
+    <div class="box hundred-pixels">100 <span class="px">px</span></div>
+    <div class="box four-hundred-pixels">400 <span class="px">px</span></div>
+    <div class="box minus-hundred-pixels">-100px</div>
+
+    <hr>
+
+    <div class="box parent">
+        <div class="box fifty-pixels">50 <span class="px">px</span></div>
+        <div class="box hundred-pixels">100 <span class="px">px</span></div>
+    </div>
+
+</body>
+</html>

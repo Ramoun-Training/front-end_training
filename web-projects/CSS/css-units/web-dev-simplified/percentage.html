@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage</title>
+    <style>
+        .box {
+            margin:4% 4% 4% 4% ;
+            padding: 1%;
+            border: 20px solid gold; /* borders can't be in percentages */
+            box-sizing: border-box;
+
+            background-color: tomato;
+            color: white;
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 300%;             
+        }
+
+        .fifty {
+            width: 50%;
+            height: 50%; /* not working ('on knwo why')*/
+        }
+
+        .hund {
+            width: 100%;
+            height: 100%; /* not working ('on knwo why')*/
+        }
+
+        .two-hund {
+            width: 200%;
+            height: 200%; /* not working ('on knwo why')*/
+        }
+
+        .minus-hund {
+            width: -100%; /* invalid property */
+            height: -100%; /* not working ('on knwo why')*/ /* invalid property */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box fifty">50%</div>
+    <div class="box hund">100%</div>
+    <div class="box two-hund">200%</div>
+    <div class="box minus-hund">-100%</div>
+
+    <br>
+
+    <div class="box">
+        <div class="box fifty">50%</div>
+        <div class="box hund">100%</div>
+        <div class="box two-hund">200%</div>
+        <div class="box minus-hund">-100%</div>    
+    </div>
+</body>
+</html>
