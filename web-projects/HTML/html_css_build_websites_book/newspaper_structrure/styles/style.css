@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding-left: 20px;
+    padding-right: 20px;
+    color:white;
+    background-color: rgb(29, 29, 29);
+}
+
+.datetime-margin {
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+    font-family: Helvetica;
+}
+
+.thin-hr {
+    width: inherit;
+    height: .1px;
+    background-color: white;
+    opacity: 0.4;
+}
+
+.thick-hr {
+    width: inherit;
+    height: 3px;
+    background-color: white;
+}
+
+
+nav {
+    margin-top: 40px;
+}
+
+.menu-box {
+    background: linear-gradient(to bottom, cyan, darkcyan);
+    width: 150px;
+    height: 100px;
+    padding: 20px;
+    margin-left: 20px;
+    float: right;
+    font-family: Helvetica;
+}
+
+.menu-box h3 {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    text-shadow: 0px 2px 1px rgba(29, 29, 29, 0.4);
+}
+
+.menu-box p {
+    text-align: start;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.menu-box:hover{
+    cursor: pointer;
+    /* background: radial-gradient( lime, darkgreen); */
+    /* background-size: 500px; */
+    /* transition: 5s linear; */
+    /* background: white; */
+    color: darkcyan;
+    transition: 1s cubic-bezier(0.86, 0, 0.07, 1);
+    /* height: 20px; */
+}
+
+#about::after {
+    margin-top: -101px;
+}
+
+/* .menu-box::after { */
+    /* content: ""; */
+    /* display: block; */
+    /* width: inherit; */
+    /* height: 0; */
+    /* background: white; */
+    /* margin-top: -119px; */
+    /* padding: 20px; */
+    /* margin-left: -20px; */
+/* } */
+
+.menu-box::after {
+    content: "";
+    display: block;
+    width: inherit;
+    height: 0px;
+    background: white;
+    margin-top: 21px;
+    padding: 0px 20px; 
+    margin-left: -20px;
+    bottom: 0;
+}
+
+.menu-box:hover::after {
+    /* height: 100px; */
+    padding: 70px 20px;
+    margin-top: -119px;
+    transition: 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.menu-box:hover h3 {
+    text-shadow: none;
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 40px;
+    width: 320px;
+}
+
+header h4 {
+    font-size: 15.8px;
+    width: 330px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.sticky {
+    background: rgb(29, 29, 29);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 2px 4px rgba(29, 29, 29, 0.575);
+}
+
+#stick {
+    z-index: 2;
+    height: 1px;
+}
+
+
+article {
+    margin-top: 50px;
+}
+
+article h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+article .sub-head {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: helvetica;
+}
+
+article img {
+    width: 620px;
+    float: right;
+    margin-top: 20px;
+    /* margin-right: 20px; */
+}
+
+article p {
+    float: left;
+    width: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+#stack-list {
+    font-family: helvetica;
+    border: solid white 2px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+#stack-list #head {
+    color: wheat;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#stack-list #list-main li {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: cyan;
+}
+
+#stack-list #list-submain li {
+    color: limegreen;
+    margin-top: 10px;
+}
+
+#stack-list #list-sub-submain li {
+    color: yellowgreen;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;    
+}
+
+.sub-head {
+    text-align: justify;
+}
+
+.sub-head::after {
+    display: block;
+    width: 20px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+footer {
+    margin-top: 30px;
+    position: sticky;
+    bottom: 0;
+    background-color: rgb(29, 29, 29);
+    width: 100%;
+    box-shadow: 0px -8px 20px rgba(29, 29, 29, 1);
+}
+
+button {
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    outline: 0px;
+}
